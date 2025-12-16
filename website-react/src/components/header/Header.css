@@ -1,0 +1,57 @@
+.HEADER {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: clamp(320px, 75.7vw, 1455px);
+    height: clamp(40px, 4.1vw, 79px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #036efc;
+    border-radius: 0 0 clamp(30px, 4vw, 60px) clamp(30px, 4vw, 60px);
+
+    overflow: hidden;
+    z-index: 100;
+}
+
+.HEADER-nav {
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 clamp(12px, 3vw, 48px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(16px, 4vw, 96px);
+}
+
+.HEADER-icon-left,
+.HEADER-icon-right {
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.HEADER-icon-left img,
+.HEADER-icon-right img {
+    width: clamp(16px, 1.6vw, 24px);
+    height: auto;
+}
+
+.HEADER-item {
+    flex: 0 1 auto;
+
+    font-family: "Instrument Sans-SemiBold", Helvetica;
+    font-size: clamp(14px, 1.3vw, 25px);
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ffffff;
+
+    white-space: nowrap;
+    cursor: pointer;
+}

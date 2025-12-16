@@ -1,0 +1,12 @@
+# Ignore artifacts:
+build
+dist
+coverage
+node_modules
+
+.vscode
+.DS_Store
+
+*.log
+*.lock
+*.tmp

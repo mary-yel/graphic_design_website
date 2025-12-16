@@ -1,0 +1,53 @@
+.footer {
+    background-color: var(--color-primary-blue, #00607a);
+    color: white;
+    padding: clamp(30px, 4vw, 60px) clamp(20px, 3vw, 80px) clamp(10px, 1.5vw, 20px);
+    font-family: "Filson Pro-Book", Helvetica;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Alineado arriba en Figma */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: clamp(20px, 2.5vw, 40px);
+    gap: clamp(20px, 3vw, 40px);
+}
+
+.footer-info-left,
+.footer-info-right {
+    flex: 1;
+    font-size: clamp(10px, 1vw, 16px);
+    /* Removido max-width para mejor distribución */
+    max-width: 350px;
+}
+
+.footer-info-left p {
+    color: white; /* Párrafos dentro del footer deben ser blancos */
+}
+
+.footer-info-right p {
+    color: white;
+    line-height: 1.5;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    /* Tamaño del logo placeholder en Figma */
+    font-size: clamp(20px, 2.5vw, 36px);
+    font-family: "Filson Pro-Bold", Helvetica;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: clamp(15px, 2vw, 30px);
+    font-size: clamp(12px, 1vw, 14px);
+}
+
+.footer-links span {
+    margin-left: clamp(10px, 1.5vw, 20px);
+    cursor: pointer;
+}
