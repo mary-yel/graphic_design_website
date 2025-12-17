@@ -1,109 +1,82 @@
-/* Colores necesarios para el componente */
 :root {
-    --color-primary-blue: #007095;
     --color-dark-orange: #ec6b34;
+    --color-primary-blue: #007095;
+    --border-thickness: 15px;
 }
 
 .carpetica {
-    /* AJUSTE DE TAMAÑO Y PROPORCIÓN: Más compacto */
     width: 100%;
-    max-width: clamp(280px, 20vw, 350px);
-    aspect-ratio: 1 / 0.75; /* Más bajo que el anterior */
-
+    max-width: 320px;
+    aspect-ratio: 1 / 0.85;
     background-color: var(--color-dark-orange);
-    border-radius: clamp(30px, 4vw, 80px);
-    overflow: hidden;
     position: relative;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 45px;
+    padding: var(--border-thickness);
+    box-sizing: border-box;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .carpetica-top {
-    /* Margen interior responsivo de 18px */
-    position: absolute;
-    top: clamp(10px, 1.5vw, 18px);
-    left: clamp(10px, 1.5vw, 18px);
-    right: clamp(10px, 1.5vw, 18px);
-    bottom: clamp(10px, 1.5vw, 18px);
-
-    background-color: #ffffff;
-    border-radius: clamp(25px, 3.5vw, 70px);
-    overflow: hidden;
-}
-
-.carpetica-top .img-placeholder {
     width: 100%;
     height: 100%;
-    background-color: var(--color-primary-blue, #007095);
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: white;
 }
 
-/* Pseudo-elemento para la franja naranja inferior sobre la imagen (la forma de 'cierre') */
+.carpetica-top img {
+    width: 101%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 .carpetica-top::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: clamp(60px, 8vw, 100px);
+    height: 45%;
     background-color: var(--color-dark-orange);
-    /* Borde redondeado superior derecho (CORRECCIÓN) */
-    border-radius: 0 clamp(20px, 2.5vw, 40px) 0 0;
+    border-top-right-radius: 40px;
+    z-index: 1;
 }
 
-.carpetica-info {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-}
-
-/* ETIQUETA / CLASIFICACIÓN (La pestaña) */
 .carpetica-label {
     position: absolute;
-    /* Posición vertical ajustada */
-    top: clamp(100px, 10vw, 200px);
+    z-index: 2;
+    bottom: 42%;
     left: 0;
-
     background-color: var(--color-dark-orange);
     color: white;
-
-    /* TAMAÑO DE FUENTE RESPONSIVO */
-    font-size: clamp(14px, 1.2vw, 20px);
-    font-family: "Filson Pro-Regular", Helvetica;
-    font-weight: 400;
-
-    /* FORMA DE PESTAÑA: 0px 50px 50px 0px */
-    border-radius: 0 clamp(10px, 1.5vw, 50px) clamp(10px, 1.5vw, 50px) 0;
-    padding: clamp(8px, 1vw, 16px) clamp(15px, 2vw, 25px);
-
+    font-family: "Filson Pro-Regular", Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 6px 18px;
+    border-radius: 0 15px 15px 0;
     white-space: nowrap;
-    pointer-events: auto;
 }
 
-/* FECHA */
 .carpetica-date {
     position: absolute;
-    bottom: clamp(30px, 4vw, 70px); /* Posición ajustada para caer sobre la franja */
-    left: clamp(20px, 2.5vw, 40px);
+    z-index: 2;
+    bottom: 12%;
+    left: 15px;
     color: white;
     line-height: 1;
-    text-align: right;
-    pointer-events: auto;
 }
 
 .dia {
-    font-family: "Filson Pro-Black", Helvetica;
-    font-size: clamp(28px, 3.5vw, 36px);
+    font-family: "Filson Pro-Black", Helvetica, sans-serif;
+    font-size: 32px;
     font-weight: 900;
-    display: inline-block;
-    margin-right: 5px;
 }
 
 .mes {
-    font-family: "Filson Pro-Regular", Helvetica;
-    font-size: clamp(14px, 1.8vw, 22px);
+    font-family: "Filson Pro-Regular", Helvetica, sans-serif;
+    font-size: 16px;
     text-transform: uppercase;
-    display: inline-block;
-    vertical-align: bottom;
+    margin-left: 5px;
 }

@@ -15,7 +15,19 @@ p {
     font-size: clamp(14px, 1.2vw, 22px);
 }
 
-/* --- SECCIÓN PRINCIPAL (ILUSTRACIÓN Y BARRA NARANJA) --- */
+.section-title {
+    background-color: var(--color-accent-orange);
+    color: white;
+    padding: clamp(5px, 1vw, 10px) clamp(40px, 4vw, 80px);
+    border-radius: 0 clamp(20px, 2vw, 40px) clamp(20px, 2vw, 40px) 0;
+    display: inline-block;
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    margin-bottom: clamp(30px, 4vw, 60px);
+    font-family: "Filson Pro-Regular", Helvetica;
+    align-self: flex-start;
+}
+
+/* --- BANNER: ILUSTRACIÓN COLLAB --- */
 
 .illustration-section {
     width: 100%;
@@ -30,102 +42,112 @@ p {
     height: auto;
     display: block;
     object-fit: cover;
-    position: relative;
-    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeBanner 10s infinite;
 }
 
-/* --- BARRA NARANJA (WELCOME BAR) --- */
-.welcome-bar {
+.illustration-section img:first-child {
+    opacity: 1;
     position: relative;
-    margin-top: calc(clamp(40px, 4.16vw, 60px) * -1);
-    margin-bottom: 0;
+    animation-delay: 0s;
+}
 
-    box-sizing: border-box;
+.illustration-section img:last-child {
+    top: -2.5px;
+    animation-delay: 5s;
+}
 
+@keyframes fadeBanner {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* --- BARRA NARANJA: WELCOME BAR --- */
+
+.welcome-bar {
     width: 100%;
-    height: auto;
-    min-height: clamp(50px, 5vw, 90px);
-    background-color: var(--color-secondary-orange);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: clamp(15px, 1.5vw, 30px) 10%;
+    height: clamp(20px, 10vw, 70px);
     color: white;
-    z-index: 3;
+    position: relative;
+    box-sizing: border-box;
+    min-height: clamp(12px, 2vw, 25px);
+    background-color: var(--color-secondary-orange);
+    margin-top: calc(clamp(5px, 4.7vw, 80px) * -0.67);
 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: clamp(0px, 0.3vw, 3px) clamp(5px, 1vw, 10px);
     font-family: "Filson Pro-Medium", Helvetica;
-    font-size: clamp(18px, 1.8vw, 32px);
-    line-height: normal;
+    font-size: clamp(14px, 1.3vw, 24px);
+    z-index: 3;
 }
 
 .study-text {
-    color: white;
+    gap: 8px;
     display: flex;
+    color: white;
+    font-weight: 600;
     align-items: center;
-    gap: 10px;
-    font-weight: 500;
+    font-size: clamp(14px, 1.5vw, 26px);
 }
 
-.study-text::before {
-    content: "";
-    display: inline-block;
-    width: clamp(20px, 2vw, 32px);
-    height: clamp(20px, 2vw, 32px);
-    background-color: var(--color-primary-blue);
-    border-radius: 50%;
+.study-adorno {
+    width: clamp(18px, 2vw, 30px);
+    height: clamp(18px, 2vw, 30px);
 }
 
 .btn-welcome {
-    background-color: #1a1a1a;
     color: white;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
 
-    padding: clamp(8px, 1vw, 15px) clamp(20px, 3vw, 40px);
-    border-radius: clamp(20px, 2.5vw, 30px);
-    font-weight: 600;
-    cursor: pointer;
-    font-size: clamp(16px, 1.5vw, 24px);
+    width: clamp(100px, 15vw, 1000px);
+    height: clamp(10px, 5vw, 40px);
+
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: clamp(10px, 3vw, 35px);
     white-space: nowrap;
 }
+
+/* --------- LINKS RÁPIDOS ---------- */
 
 .quick-links {
     display: flex;
     justify-content: space-around;
-    padding: clamp(15px, 2vw, 40px) 10%;
-    position: relative;
-    overflow: hidden;
+    padding: clamp(15px, 2vw, 40px) 20%;
+    gap: 20px;
 }
 
-.quick-links::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: clamp(60px, 8vw, 150px);
-    height: clamp(60px, 8vw, 150px);
-    background:
-        linear-gradient(to top right, transparent 50%, var(--color-secondary-orange) 50%) top left / 50% 50% no-repeat,
-        linear-gradient(to bottom right, transparent 50%, var(--color-primary-blue) 50%) bottom left / 50% 50% no-repeat;
-    background-size: 50% 50%;
-    transform: rotate(90deg);
-    opacity: 0.5;
-    z-index: 0;
+.quick-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.quick-links::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: clamp(60px, 8vw, 150px);
-    height: clamp(60px, 8vw, 150px);
-    background:
-        linear-gradient(to bottom left, transparent 50%, var(--color-primary-blue) 50%) top right / 50% 50% no-repeat,
-        linear-gradient(to top left, transparent 50%, var(--color-secondary-orange) 50%) bottom right / 50% 50% no-repeat;
-    background-size: 50% 50%;
-    transform: rotate(90deg);
-    opacity: 0.5;
-    z-index: 0;
+.quick-adorno {
+    width: clamp(10px, 2vw, 30px);
+    height: clamp(10px, 2vw, 30px);
 }
 
 .quick-links a {
@@ -137,96 +159,254 @@ p {
     z-index: 1;
 }
 
-.section-title {
-    background-color: var(--color-accent-orange);
-    color: white;
-    padding: clamp(10px, 1.5vw, 20px) clamp(40px, 4vw, 80px);
-    border-radius: 0 clamp(20px, 2vw, 40px) clamp(20px, 2vw, 40px) 0;
-    display: inline-block;
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
-    margin-bottom: clamp(30px, 4vw, 60px);
-    font-family: "Filson Pro-Regular", Helvetica;
+/* --- NOVEDADES --- */
+
+.novedades-section {
+    position: relative;
+    padding-bottom: 60px;
 }
 
 .novedades-layout {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 0 5%;
-    gap: 3%;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 40px;
 }
 
+/* Enterate */
 .enterate-static {
-    flex: 0 0 30%;
-    max-width: 300px;
-    aspect-ratio: 1 / 1.5;
-    background-color: #ccc;
+    flex: 1 1 280px;
+    max-width: 360px;
+    width: 100%;
+
+    aspect-ratio: 300 / 450;
+    min-height: 450px;
+
+    background-color: transparent;
     position: relative;
     border-radius: 10px;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-.enterate-placeholder {
+.enterate-text {
     position: absolute;
-    top: 50%;
+    bottom: -6%;
+
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: clamp(1.5rem, 2.5vw, 3rem);
-    color: #333;
-    font-weight: bold;
+    transform: translateX(-50%);
+
+    width: 100%;
     text-align: center;
+    white-space: nowrap;
+
+    font-family: "Gerhaus", sans-serif;
+    color: var(--color-primary-blue);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+    z-index: 5;
 }
 
+/* Capas base */
+.rect-1,
+.rect-2,
+.rect-3,
+.enterate-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+/* RECTÁNGULO DE FONDO NARANJA (Primer plano) */
+.rect-1 {
+    z-index: 1;
+    top: -15%;
+    left: -12%;
+    width: 100%;
+    height: 100%;
+}
+
+/* RECTÁNGULO DE FONDO NARANJA (Segundo plano) */
+.rect-2 {
+    z-index: 2;
+    top: -12%;
+    left: 0%;
+    width: 95%;
+    height: 100%;
+}
+
+/* RECTÁNGULO DE FONDO NARANJA (Tercer plano) */
+.rect-3 {
+    z-index: 3;
+    top: -32%;
+    left: 0;
+    width: 65%;
+    height: 100%;
+}
+
+/* IMAGEN */
+.enterate-img {
+    z-index: 4;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+/* Carpetas */
 .carpetica-container {
-    flex: 0 0 40%;
+    flex: 2 1 300px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Instagram */
 .instagram-section {
-    flex: 0 0 20%;
+    flex: 1 1 260px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
+.instagram-section iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Texto síguenos */
 .siguenos-text {
+    font-family: "Gerhaus", sans-serif;
     color: var(--color-primary-blue);
-    font-weight: bold;
     text-align: center;
     margin-bottom: 10px;
-    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-size: clamp(1.5rem, 1.5vw, 2rem);
+}
+
+/* --- PLAN DE ESTUDIOS --- */
+
+.plan-section {
+    width: 100%;
+    overflow-x: visible;
+}
+
+.plan-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: "Filson Pro-Medium", Helvetica;
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+}
+
+.plan-slider {
+    width: 100%;
+    max-width: 100%;
+
+    height: clamp(160px, 22vw, 260px);
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 5%;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.plan-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.plan-slider {
+    scrollbar-width: none;
+}
+
+.plan-slider img {
+    flex: 0 0 auto;
+
+    height: 100%;
+    max-height: 220px;
+    width: auto;
+
+    object-fit: contain;
+    border-radius: 12px;
+
+    user-select: none;
+    pointer-events: auto;
+}
+
+/* --- PROYECTOS --- */
+
+.destacados-section {
+    display: block;
+    padding: 60px 0;
+    width: 100%;
+}
+
+.destacados-copy {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .destacados-copy h3 {
-    color: #000000;
-    font-family: "Filson Pro-Bold", Helvetica;
-    font-size: clamp(28px, 3vw, 48px);
+    color: #000;
+    font-family: "Filson Pro";
+    font-size: 48px;
+    font-style: normal;
     font-weight: 700;
-    text-align: center;
+    line-height: normal;
     margin-bottom: 10px;
 }
 
 .destacados-copy p {
-    color: var(--color-text-gray);
-    font-family: "Filson Pro-Book", Helvetica;
-    font-size: clamp(16px, 1.5vw, 32px);
+    color: #646464;
     text-align: center;
-    margin-bottom: 40px;
+    font-family: "Filson Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
 }
 
 .proyectos-grid {
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 20px 10%;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 2px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
 .proyecto-card {
-    border-radius: 30px;
+    border-radius: 80px;
     overflow: hidden;
-    min-height: clamp(200px, 20vw, 300px);
+    aspect-ratio: 350 / 200;
     background-color: #ccc;
+    transition: transform 0.3s ease;
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-6px);
 }
 
 .img-placeholder-proyecto {
@@ -235,21 +415,18 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    color: #333;
 }
 
+/* Botón ver más */
 .btn-ver-mas {
     background-color: var(--color-accent-orange);
     color: white;
     border-radius: 100px;
     display: block;
-    width: clamp(120px, 10vw, 180px);
+    width: 160px;
     text-align: center;
     font-size: clamp(18px, 1.5vw, 24px);
     padding: 10px 0;
     margin: 40px auto 80px;
     text-decoration: none;
-    font-family: "Filson Pro-Book", Helvetica;
-    font-weight: 400;
 }
