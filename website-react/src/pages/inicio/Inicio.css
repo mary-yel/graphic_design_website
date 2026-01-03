@@ -10,11 +10,6 @@
     box-sizing: border-box;
 }
 
-p {
-    color: var(--color-text-gray);
-    font-size: clamp(14px, 1.2vw, 22px);
-}
-
 .section-title {
     background-color: var(--color-accent-orange);
     color: white;

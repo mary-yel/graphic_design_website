@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+.project-page-container {
+    background-color: #ffffff;
+}
+
+.body-container {
+    display: flex;
+    justify-content: center;
+}
+
+.title-section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-section h1 {
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-size: clamp(40px, 4.167vw, 80px);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: clamp(19px, 1.97vw, 38px);
+    margin-bottom: clamp(21px, 2.18vw, 42px);
+}
+
+.title-section h4 {
+    color: #646464;
+    text-align: center;
+    font-weight: 350;
+    font-size: clamp(16px, 1.67vw, 32px);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: clamp(19px, 1.97vw, 38px);
+    margin-bottom: clamp(24px, 2.55vw, 49px);
+}
+
+.projects-container {
+    display: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-search {
+    width: clamp(107px, 66.87vw, 1284px);
+    height: clamp(50px, 5.21vw, 100px);
+
+    color: #B9B9B9;
+    font-weight: 350;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 1.67vw, 32px);
+    padding-left: clamp(53px, 5.57vw, 107px);
+
+    border: none;
+    border-radius: 93px;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: clamp(32px, 3.22vw, 62px);
+}
+
+
+.filters-container {
+    height: fit-content;
+    width: clamp(150px, 15.625vw, 300px);
+    
+    display: block;
+    
+    background: #ffffff;
+    border-radius: 80px 0 0 80px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: clamp(9px, 0.9375vw, 18px) clamp(19px, 1.979vw, 38px);
+
+    margin-left: clamp(58.5px, 6.09vw, 117px);
+}
+
+
+@media (max-width: 500px) {
+    .filters-container {
+        display: none;
+    }
+}
+
+.filters-container h3 {
+    color: #ff7700;
+    font-weight: 700;
+    text-align: center;
+    font-size: clamp(16px, 1.67vw, 32px);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.filters-container h4 {
+    color: #007095;
+    font-weight: 700;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(10px, 1.0416vw, 20px);
+}
+
+.filters-container h5 {
+    color: #000000;
+    font-weight: 700;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(10px, 1.0416vw, 20px);
+}
