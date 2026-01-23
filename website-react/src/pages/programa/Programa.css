@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.program-banner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    height: clamp(152px, 31.67vw, 608px);
+    margin-top: clamp(16px, 1.61vw, 31px);
+    margin-bottom: clamp(50px, 7.81vw, 150px);
+}
+
+/* Foto de estudiantes: */
+
+.program-banner-photo {
+    display: flex;
+    justify-content: center;
+
+    height: clamp(152px, 31.67vw, 608px);
+}
+
+#foto-banner {
+    width: clamp(358px, 74.739vw, 1435px);
+    height: clamp(152px, 31.67vw, 608px);
+    
+    border-radius: clamp(40px, 4.167vw, 80px);
+
+    position: absolute;
+    z-index: 1;
+}
+
+/* Botones: */
+
+.button-banner {
+    width: clamp(96px, 15.10vw, 290px);
+    height: clamp(22px, 3.38vw, 65px);
+
+    border: none;
+    border-radius: 62px;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+
+    color: #007095;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: clamp(8px, 1.25vw, 24px);
+
+    position: absolute;
+    cursor: pointer;
+    bottom: -5%;
+    z-index: 3;
+}
+
+.button-banner-left {
+    right: 33%;
+}
+
+.button-banner-right {
+    margin-left: clamp(15.3px, 2.39vw, 46px);
+
+    right: 15%;
+}
+
+/* Adornos: */
+
+.esquinero {
+    position: absolute;
+    pointer-events: none;
+
+    width: clamp(88px, 15vw, 288px);
+    height: clamp(88px, 15.052vw, 289px);
+
+    bottom: -16%;
+    z-index: 2;
+}
+
+.esquinero-left {
+    left: 0;
+}
+
+.esquinero-right {
+    right: 0;
+    transform: scaleX(-1);
+}
+
+/* Parrafo introductorio: */
+
+.program-intro {
+    display: flex;
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+    width: clamp(300px, 79.53vw, 1527px);
+}
+
+@media (max-width: 500px) {
+    .program-intro {
+        display: block;
+    }
+}
+
+.quick-adorno {
+    margin-top: clamp(2px, 0.208vw, 4px);
+}
+
+.program-intro p {
+    margin: 0px;
+    width: clamp(348px, 54.375vw, 1044px);
+
+    color: #000;
+    font-weight: 500;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: clamp(10px, 1.041vw, 20px);
+
+    margin-left: clamp(3px, 0.3125vw, 6px);
+}
+
+#resolution {
+    color: #000000;
+    font-weight: 275;
+    margin-left: -0.1%;
+    font-style: italic;
+    font-family: Poppins;
+    font-size: clamp(10px, 0.9375vw, 18px);
+}
+
+.program-resumen {
+    width: clamp(199px, 20.72vw, 398px);
+    height: clamp(175px, 18.22vw, 350px);
+
+    margin-top: auto;
+    margin-bottom: auto;
+    
+    background: #ff7700;
+    margin-left: clamp(42.5px, 4.42vw, 85px);
+    border-radius: clamp(40px, 4.16vw, 80px) 0 0 clamp(40px, 4.16vw, 80px);
+}
+
+/* Secciones de imagenes: */
+
+.program-photos {
+    width: 100%;
+    display: flex;
+    background: #036EFC;
+    height: clamp(101px, 10.46vw, 201px);
+
+    position: relative;
+    justify-content: center;
+    margin-top: clamp(32.3px, 5.05vw, 97px);
+}
+
+.student img {
+    width: clamp(233px, 24.27vw, 466px);
+    height: clamp(138px, 14.375vw, 276px);
+
+    position: relative;
+    top: -20%;
+}
+
+.graduate img {
+    height: clamp(132px, 13.8vw, 265px);
+
+    margin-left: clamp(0px, 4vw, 130px);
+    margin-right: clamp(0px, 4vw, 130px);
+
+    position: relative;
+    top: -20%;
+}
+
+.degree img {
+    width: clamp(232px, 24.16vw, 464px);
+    height: clamp(138px, 14.375vw, 276px);
+
+    position: relative;
+    top: -20%;
+}
+
+/* Plan de estudios: */
+
+.program-information {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: clamp(22px, 0.343vw, 66px);
+}
+
+.program-information p {
+    margin: 0px;
+
+    color: #000;
+    font-weight: 500;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: clamp(10px, 1.041vw, 20px);
+
+    margin-left: clamp(4px, 0.98vw, 19px);
+}
+
+.program-information li {
+    margin: 0px;
+
+    color: #000;
+    font-weight: 500;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: clamp(10px, 1.041vw, 20px);
+
+    margin-left: clamp(3px, 0.3125vw, 6px);
+}
+
+.plan-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(16px, 0.25vw, 48px);
+    font-weight: 700;
+}
+
+.plan-title img {
+    width: clamp(12.6px, 1.97vw, 38px);
+    height: clamp(14px, 2.24vw, 43px);
+}
+
+.plan-slider img {
+    width: clamp(458px, 71.66vw, 1376px);
+    height: clamp(151px, 23.59vw, 453px);
+
+    border-radius: clamp(7.9px, 1.23vw, 23.7px);
+}
+
+.info-text {
+    display: flex;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: clamp(420px, 65.72vw, 1262px);
+}

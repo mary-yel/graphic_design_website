@@ -1,4 +1,4 @@
-/* Ancho de pantalla original: 1920 px */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
 .project-container {
     display: flex;
@@ -71,21 +71,23 @@
 }
 
 .project-button-more {
-    border: none;
     right: 0;
     bottom: 0;
+    border: none;
+    cursor: pointer;
     position: absolute;
 
     color: #fff;
-    font-family: "filson-pro", sans-serif;
-    font-size: clamp(14px, 1.45vw, 28px);
     font-weight: 400;
+    font-size: clamp(14px, 1.45vw, 28px);
+    font-family: "filson-pro", sans-serif;
 
     width: clamp(167px, 13.9vw, 267px);
     height: clamp(20px, 4.16vw, 80px);
+
+    background: #ef6a35;
     align-items: center;
     justify-content: center;
     gap: clamp(5px, 0.52vw, 10px);
-    background: #ef6a35;
     border-radius: clamp(20px, 4.16vw, 80px) 0 clamp(20px, 4.16vw, 80px) 0;
 }

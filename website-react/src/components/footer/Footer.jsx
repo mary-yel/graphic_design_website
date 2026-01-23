@@ -3,7 +3,8 @@ import "./Footer.css";
 import Logo1 from "../../assets/svgs/inicio/LogoUniversidad.svg";
 import Logo2 from "../../assets/svgs/inicio/LogoAcreditacion.svg";
 import Logo3 from "../../assets/svgs/inicio/LogoDiseno.svg";
-import Adorno4 from "../../assets/svgs/inicio/AdornoTipo4.svg"; // Esquinero
+
+import Adorno4 from "../../assets/svgs/inicio/AdornoTipo4.svg";
 
 export default function Footer() {
     return (

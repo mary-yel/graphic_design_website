@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -43,6 +46,16 @@
     justify-content: center;
 }
 
+.projects-container p {
+    color: #646464;
+    text-align: center;
+    font-weight: 350;
+    font-size: clamp(16px, 1.67vw, 32px);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: clamp(19px, 1.97vw, 38px);
+    margin-bottom: clamp(24px, 2.55vw, 49px);
+}
+
 .projects-search {
     width: clamp(107px, 66.87vw, 1284px);
     height: clamp(50px, 5.21vw, 100px);
@@ -59,7 +72,6 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
     margin-bottom: clamp(32px, 3.22vw, 62px);
 }
-
 
 .filters-container {
     height: fit-content;
@@ -100,6 +112,7 @@
 
 .filters-container h5 {
     color: #000000;
+    cursor: pointer;
     font-weight: 700;
     text-align: right;
     font-family: 'Montserrat', sans-serif;
