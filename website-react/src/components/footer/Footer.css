@@ -13,17 +13,17 @@
     height: clamp(145px, 15.052vw, 289px);
 }
 
-.esquinero {
+.esquinero-footer {
     position: absolute;
     pointer-events: none;
     width: clamp(145px, 15.052vw, 289px);
 }
 
-.esquinero-left {
+.esquinero-footer-left {
     left: 0;
 }
 
-.esquinero-right {
+.esquinero-footer-right {
     right: 0;
     transform: scaleX(-1);
 }

@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'FilsonPro';
+    src: url('../../assets/fonts/FilsonProRegular.otf') format('opentype');
+}
 
 * {
     box-sizing: border-box;
@@ -14,6 +16,8 @@
     justify-content: center;
 }
 
+/* TÍTULO Y SUBTÍTULO: */
+
 .title-section {
     display: block;
     align-items: center;
@@ -24,21 +28,29 @@
     color: #000000;
     font-weight: 700;
     text-align: center;
-    font-size: clamp(40px, 4.167vw, 80px);
-    font-family: 'Montserrat', sans-serif;
-    margin-top: clamp(19px, 1.97vw, 38px);
-    margin-bottom: clamp(21px, 2.18vw, 42px);
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(23px, 2.66vw, 46px);
+    margin-top: clamp(19px, 2.19vw, 38px);
+    margin-bottom: clamp(6px, 0.63vw, 11px);
 }
 
 .title-section h4 {
     color: #646464;
-    text-align: center;
     font-weight: 350;
-    font-size: clamp(16px, 1.67vw, 32px);
-    font-family: 'Montserrat', sans-serif;
-    margin-top: clamp(19px, 1.97vw, 38px);
-    margin-bottom: clamp(24px, 2.55vw, 49px);
+    text-align: center;
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(12px, 1.38vw, 24px);
+    margin-top: clamp(6px, 0.63vw, 11px);
+    margin-bottom: clamp(19px, 2.19vw, 38px);
 }
+
+/* LISTA DE PROYECTOS: */
 
 .projects-container {
     display: fit-content;
@@ -46,47 +58,69 @@
     justify-content: center;
 }
 
-.projects-container p {
+.projects-container h4 {
     color: #646464;
-    text-align: center;
     font-weight: 350;
-    font-size: clamp(16px, 1.67vw, 32px);
-    font-family: 'Montserrat', sans-serif;
-    margin-top: clamp(19px, 1.97vw, 38px);
-    margin-bottom: clamp(24px, 2.55vw, 49px);
+    text-align: center;
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(12px, 1.38vw, 24px);
+    margin-top: clamp(6px, 0.63vw, 11px);
+    margin-bottom: clamp(19px, 2.19vw, 38px);
+}
+
+/* BARRA DE BÚSQUEDA:  */
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .projects-search {
-    width: clamp(107px, 66.87vw, 1284px);
-    height: clamp(50px, 5.21vw, 100px);
-
     color: #B9B9B9;
     font-weight: 350;
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(16px, 1.67vw, 32px);
-    padding-left: clamp(53px, 5.57vw, 107px);
-
+    font-family: 'FilsonPro', sans-serif;
+    
     border: none;
-    border-radius: 93px;
     background: #ffffff;
+    border-radius: clamp(47px, 5.38vw, 93px);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-    margin-bottom: clamp(32px, 3.22vw, 62px);
+    
+    /* 1728 */
+    
+    width: clamp(538px, 62.26vw, 1076px);
+    height: clamp(34px, 5.21vw, 68px);
+    
+    font-size: clamp(12px, 1.85vw, 24px);
+    padding-left: clamp(20px, 2.31vw, 40px);
+    
+    margin-bottom: clamp(29px, 3.41vw, 59px);
 }
 
+.projects-search:focus {
+    outline: none;
+}
+
+/* SECCIÓN DE FILTROS: */
+
 .filters-container {
-    height: fit-content;
-    width: clamp(150px, 15.625vw, 300px);
-    
     display: block;
+    height: fit-content;
     
     background: #ffffff;
     border-radius: 80px 0 0 80px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: clamp(9px, 0.9375vw, 18px) clamp(19px, 1.979vw, 38px);
 
+    /* 1728 */
+
+    width: clamp(150px, 15.625vw, 300px);
     margin-left: clamp(58.5px, 6.09vw, 117px);
+    padding: clamp(9px, 0.9375vw, 18px) clamp(19px, 1.979vw, 38px);
 }
-
 
 @media (max-width: 500px) {
     .filters-container {
@@ -98,15 +132,21 @@
     color: #ff7700;
     font-weight: 700;
     text-align: center;
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
     font-size: clamp(16px, 1.67vw, 32px);
-    font-family: 'Montserrat', sans-serif;
 }
 
 .filters-container h4 {
     color: #007095;
     font-weight: 700;
     text-align: right;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
     font-size: clamp(10px, 1.0416vw, 20px);
 }
 
@@ -115,6 +155,19 @@
     cursor: pointer;
     font-weight: 700;
     text-align: right;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'FilsonPro', sans-serif;
+
+    /* 1728 */
+
     font-size: clamp(10px, 1.0416vw, 20px);
+    transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.filters-container h5:hover {
+    transform: translateX(4px);
+}
+
+.filters-container h5.active {
+    color: #ff7700;
+    font-weight: 800;
 }

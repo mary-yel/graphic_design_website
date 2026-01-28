@@ -10,8 +10,8 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footer-esq">
-                <img src={Adorno4} alt="Esquinero izquierdo" className="esquinero esquinero-left" />
-                <img src={Adorno4} alt="Esquinero derecho" className="esquinero esquinero-right" />
+                <img src={Adorno4} alt="Esquinero izquierdo" className="esquinero-footer esquinero-footer-left" />
+                <img src={Adorno4} alt="Esquinero derecho" className="esquinero-footer esquinero-footer-right" />
             </div>
 
             <div className="footer-body">

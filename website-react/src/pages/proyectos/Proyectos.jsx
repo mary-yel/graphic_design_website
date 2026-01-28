@@ -17,7 +17,7 @@ import Project8 from "../../assets/svgs/proyectos/ImagenProyecto8.svg";
 import Project9 from "../../assets/svgs/proyectos/ImagenProyecto9.svg";
 
 const proyectos = [
-    { id: 1, title:'Alpina Challenge', author:'Brunnibert', desc:'Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.', img:Project1, tags: [] },
+    { id: 1, title:'Alpina Design Challenge', author:'Brunnibert', desc:'Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.', img:Project1, tags: [] },
     { id: 2, title:'Las verduras de Sofi', author:'Dalania, Brunnibert', desc:'Cuento infantil Ilustrado donde se relata la realidad de algunos niños que trabajan desde temprana edad. ', img:Project2, tags: [] },
     { id: 3, title:'Documentales Matronas ', author:'Saray Banda', desc:'Aquí pueden mirar la historia junto  lo saberes ancestrales.', img:Project3, tags: [] },
     { id: 4, title:'Audioslave', author:'-', desc:'Ilustraciones digitales para proyectos de aula donde se retratan canciones de álbumes de los artistas favoritos de cada estudiante y lo que sienten.', img:Project4, tags: [] },
@@ -33,6 +33,10 @@ export default function Proyectos() {
     const [search, setSearch] = useState("");
 
     const [activeTag, setActiveTag] = useState(null);
+
+    const handleTagClick = (tag) => {
+        setActiveTag(prev => prev === tag ? null : tag);
+    };
 
     const filteredProjects = proyectos.filter((project) => {
         const matchText =
@@ -55,11 +59,13 @@ export default function Proyectos() {
                 <h4>Explora los últimos trabajos de los estudiantes.</h4>
             </section>
 
+            <div className="search-section">
+                <input id="projects-search" className="projects-search" type="text" placeholder="Buscar" value={search} onChange={(e) => setSearch(e.target.value)} />
+            </div>
+
             <div className="body-container">
                 <div className="projects-container">
-                    <input id="projects-search" className="projects-search" type="text" placeholder="Buscar" value={search} onChange={(e) => setSearch(e.target.value)} />
-
-                    {filteredProjects.length === 0 && ( <p>No se encontraron proyectos . . .</p> )}
+                    {filteredProjects.length === 0 && ( <h4>No se encontraron proyectos . . .</h4> )}
 
                     {filteredProjects.map(item => (<Proyecto key={item.id} title={item.title} author={item.author} desc={item.desc} img={item.img} />))}
                 </div>
@@ -67,33 +73,33 @@ export default function Proyectos() {
                 <div className="filters-container">
                     <h3>Filtros</h3>
 
-                    <h4>Más populares</h4>
+                    {/* <h4>Más populares</h4>
 
-                    <h5 onClick={() => setActiveTag("ilustracion")}>Ilustración</h5>
+                    <h5 className={activeTag === "ilustracion" ? "active" : ""} onClick={() => handleTagClick("ilustracion")}>Ilustración</h5>
 
-                    <h5 onClick={() => setActiveTag("audiovisuales")}>Audiovisuales</h5>
+                    <h5 className={activeTag === "audiovisuales" ? "active" : ""} onClick={() => handleTagClick("audiovisuales")}>Audiovisuales</h5>
 
-                    <h5 onClick={() => setActiveTag("animacion")}>Animación</h5>
+                    <h5 className={activeTag === "animacion" ? "active" : ""} onClick={() => handleTagClick("animacion")}>Animación</h5>
 
-                    <h5 onClick={() => setActiveTag("interfaces")}>Interfaces</h5>
+                    <h5 className={activeTag === "interfaces" ? "active" : ""} onClick={() => handleTagClick("interfaces")}>Interfaces</h5>
 
-                    <h5 onClick={() => setActiveTag("modelado_3D")}>Modelado 3D</h5>
+                    <h5 className={activeTag === "modelado_3D" ? "active" : ""} onClick={() => handleTagClick("modelado_3D")}>Modelado 3D</h5> */}
 
                     <h4>General</h4>
 
-                    <h5 onClick={() => setActiveTag("animacion")}>Animación</h5>
+                    <h5 className={activeTag === "animacion" ? "active" : ""} onClick={() => handleTagClick("animacion")}>Animación</h5>
 
-                    <h5 onClick={() => setActiveTag("audiovisuales")}>Audiovisuales</h5>
+                    <h5 className={activeTag === "audiovisuales" ? "active" : ""} onClick={() => handleTagClick("audiovisuales")}>Audiovisuales</h5>
 
-                    <h5 onClick={() => setActiveTag("editorial")}>Editorial</h5>
+                    <h5 className={activeTag === "editorial" ? "active" : ""} onClick={() => handleTagClick("editorial")}>Editorial</h5>
 
-                    <h5 onClick={() => setActiveTag("identidad_visual")}>Identidad Visual</h5>
+                    <h5 className={activeTag === "identidad_visual" ? "active" : ""} onClick={() => handleTagClick("identidad_visual")}>Identidad Visual</h5>
 
-                    <h5 onClick={() => setActiveTag("interfaces")}>Interfaces</h5>
+                    <h5 className={activeTag === "interfaces" ? "active" : ""} onClick={() => handleTagClick("interfaces")}>Interfaces</h5>
 
-                    <h5 onClick={() => setActiveTag("ilustracion")}>Ilustración</h5>
+                    <h5 className={activeTag === "ilustracion" ? "active" : ""} onClick={() => handleTagClick("ilustracion")}>Ilustración</h5>
 
-                    <h5 onClick={() => setActiveTag("modelado_3D")}>Modelado 3D</h5>
+                    <h5 className={activeTag === "modelado_3D" ? "active" : ""} onClick={() => handleTagClick("modelado_3D")}>Modelado 3D</h5>
                 </div>
             </div>
 

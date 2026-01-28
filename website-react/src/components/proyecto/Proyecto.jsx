@@ -1,9 +1,12 @@
 import "./Proyecto.css";
 
+// Recursos:
+import click_icon from "../../assets/svgs/proyectos/Click_icon.svg";
+
 export default function Proyecto({ title, author, desc, img }) {
     return (
         <article className="project-container">
-            <img src={img} alt={`Miniatura del proyecto ${title}`} />
+            <img src={img} className="preview-project" alt={`Miniatura del proyecto ${title}`} />
 
             <div className="project-details">
                 <div className="project-content">
@@ -12,7 +15,9 @@ export default function Proyecto({ title, author, desc, img }) {
                     <div className="project-desc">{desc}</div>
                 </div>
 
-                <button className="project-button-more">Saber Más</button>
+                <img src={click_icon} className="click_icon" alt="icono-clickable" />
+
+                <button className="project-button-more">Ver Más</button>
             </div>
         </article>
     );

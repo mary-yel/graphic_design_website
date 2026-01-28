@@ -1,21 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
+/* CONTENEDOR: */
+
 .project-container {
     display: flex;
-    width: clamp(320px, 66.875vw, 1284px);
-    height: clamp(180px, 17.18vw, 330px);
-    margin-bottom: clamp(31px, 3.22vw, 62px);
     background: #ffffff;
-    border-radius: 0 clamp(20px, 4.16vw, 80px) clamp(20px, 4.16vw, 80px) clamp(20px, 4.16vw, 80px);
     box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+
+    /* 1728 */
+
+    width: clamp(421px, 48.67vw, 841px);
+    height: clamp(113px, 13.02vw, 225px);
+
+    margin-bottom: clamp(16px, 1.79vw, 31px);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0 clamp(20px, 4.62vw, 80px) clamp(20px, 4.62vw, 80px) clamp(20px, 4.62vw, 80px);
 }
 
-.project-container img {
-    object-fit: cover;
-    width: clamp(120px, 30.6vw, 588px);
-    height: clamp(180px, 17.18vw, 330px);
-    border-radius: 0 clamp(20px, 4.16vw, 80px) clamp(20px, 4.16vw, 80px) clamp(20px, 4.16vw, 80px);
+.project-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
+
+/*   IMAGEN:   */
+
+.preview-project {
+    /* 1728 */
+    
+    object-fit: cover;
+    width: clamp(200px, 23.14vw, 400px);
+    height: clamp(113px, 13.02vw, 225px);
+    border-radius: 0 clamp(20px, 4.62vw, 80px) clamp(20px, 4.62vw, 80px) clamp(20px, 4.62vw, 80px);
+}
+
+/* INFORMACIÓN: */
 
 .project-details {
     display: block;
@@ -25,30 +44,40 @@
 .project-content {
     display: flex;
     flex-direction: column;
-    padding-top: clamp(15px, 1.82vw, 35px);
-    padding-right: clamp(35px, 7.03vw, 135px);
-    padding-left: clamp(15px, 1.82vw, 35px);
+
+    /* 1728 */
+
+    padding-top: clamp(18px, 2.02vw, 35px);
+    padding-left: clamp(14px, 1.67vw, 29px);
+    padding-right: clamp(35px, 4.05vw, 70px);
 }
 
 .project-title {
     color: #000;
-    font-family: "Instrument Sans", sans-serif;
-    font-size: clamp(20px, 2.08vw, 40px);
-    font-style: normal;
     font-weight: 600;
+    font-style: normal;
+    font-family: "Instrument Sans", sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(14px, 1.38vw, 24px);
 }
 
 .project-author {
     color: #036efc;
     font-weight: 600;
     font-style: italic;
-    margin-bottom: clamp(5px, 0.52vw, 10px);
+    
+    /* 1728 */
+    
+    font-size: clamp(8px, 0.86vw, 15px);
+    margin-bottom: clamp(5px, 0.57vw, 10px);
     font-family: "Instrument Sans", sans-serif;
-    font-size: clamp(12px, 1.25vw, 24px);
 
     overflow-y: hidden;
     text-align: justify;
     text-overflow: ellipsis;
+
 
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -65,29 +94,60 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 
-    font-size: clamp(13px, 1.45vw, 28px);
-    font-family: "Instrument Sans", sans-serif;
     font-weight: 500;
+    font-family: "Instrument Sans", sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(8px, 0.92vw, 16px);
 }
 
+@media (max-width: 800px) {
+    .project-desc {
+        -webkit-line-clamp: 3;
+    }
+}
+
+/*    BOTÓN    */
+
 .project-button-more {
-    right: 0;
-    bottom: 0;
+    right: 5%;
+    bottom: 5%;
     border: none;
     cursor: pointer;
     position: absolute;
 
     color: #fff;
     font-weight: 400;
-    font-size: clamp(14px, 1.45vw, 28px);
-    font-family: "filson-pro", sans-serif;
-
-    width: clamp(167px, 13.9vw, 267px);
-    height: clamp(20px, 4.16vw, 80px);
-
     background: #ef6a35;
+    font-family: "filson-pro", sans-serif;
+    
     align-items: center;
     justify-content: center;
-    gap: clamp(5px, 0.52vw, 10px);
-    border-radius: clamp(20px, 4.16vw, 80px) 0 clamp(20px, 4.16vw, 80px) 0;
+
+    /* 1728 */
+
+    width: clamp(85px, 9.78vw, 169px);
+    height: clamp(24px, 2.77vw, 48px);
+
+    font-size: clamp(10px, 1.15vw, 20px);
+
+    gap: clamp(5px, 0.57vw, 10px);
+    padding-right: clamp(12px, 2vw, 24px);
+    border-radius: clamp(20px, 4.62vw, 80px) 0 clamp(20px, 4.62vw, 80px) 0;
+}
+
+.project-button-more:hover {
+    background: #d95c2b;
+}
+
+.click_icon {
+    width: clamp(11px, 1.27vw, 22px);
+    height: clamp(11px, 1.27vw, 22px);
+
+    right: 10%;
+    bottom: 12%;
+    position: absolute;
+
+    z-index: 1;
 }
