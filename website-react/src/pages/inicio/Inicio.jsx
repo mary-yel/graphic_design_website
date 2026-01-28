@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "./Inicio.css";
 
 // Componentes:
-import Footer from "../../components/footer/Footer";
 import Carpetica from "../../components/carpetica/Carpetica";
 import InstagramFeed from "../../components/common/InstagramFeed";
 
@@ -44,7 +43,6 @@ const proyectos = [Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5, Proyec
 export default function Inicio() {
     return (
         <div className="inicio-container">
-            {/* BANNER */}
 
             <section className="illustration-section">
                 <img src={Collage1} className="banner-img img-1" alt="Collage 1" />
@@ -61,8 +59,6 @@ export default function Inicio() {
 
                 <p className="btn-welcome">Bienvenido</p>
             </div>
-
-            {/* LINKS RÁPIDOS */}
 
             <nav className="quick-links">
                 <div className="quick-item">
@@ -83,13 +79,10 @@ export default function Inicio() {
                 </div>
             </nav>
 
-            {/* NOVEDADES */}
-
             <section className="novedades-section">
                 <h2 className="section-title">Novedades</h2>
 
                 <div className="novedades-layout">
-                    {/* NOTICIAS */}
 
                     <div className="enterate-static">
                         <img src={Rect1} className="rect-1" alt="" />
@@ -99,14 +92,10 @@ export default function Inicio() {
                         <p className="enterate-text">¡ENTÉRATE!</p>
                     </div>
 
-                    {/* CARPETAS */}
-
                     <div className="carpetica-container">
                         <Carpetica imagen={Carpeta1} dA="11" mes="Nov" clasificaciN="Clasificación" />
                         <Carpetica imagen={Carpeta2} dA="25" mes="Oct" clasificaciN="Talleres" />
                     </div>
-
-                    {/* INSTAGRAM */}
 
                     <div className="instagram-section">
                         <p className="siguenos-text">¡SÍGUENOS!</p>
@@ -116,8 +105,6 @@ export default function Inicio() {
                     </div>
                 </div>
             </section>
-
-            {/* PLAN DE ESTUDIOS */}
 
             <section className="plan-section">
                 <h2 className="section-title">Información del programa</h2>
@@ -157,8 +144,6 @@ export default function Inicio() {
                     Ver Más
                 </NavLink>
             </section>
-
-            <Footer />
         </div>
     );
 }

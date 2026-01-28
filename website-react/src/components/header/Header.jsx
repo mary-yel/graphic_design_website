@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import homeIcon from "../../assets/svgs/inicio/Home.svg";
 import menuIcon from "../../assets/svgs/inicio/Menu.svg";
 
-export default function Header({ className = "" }) {
+export default function Header({ variant = "default" }) {
     return (
-        <header className={`HEADER ${className}`}>
+        <header className={`HEADER HEADER--${variant}`}>
             <nav className="HEADER-nav">
                 <NavLink to="/" className="HEADER-icon-left">
                     <img src={homeIcon} alt="Inicio" />

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'FilsonPro';
-    src: url('../../assets/fonts/FilsonProRegular.otf') format('opentype');
+    font-family: "FilsonPro";
+    src: url("../../assets/fonts/FilsonProRegular.otf") format("opentype");
 }
 
 * {
@@ -28,7 +28,7 @@
     color: #000000;
     font-weight: 700;
     text-align: center;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
@@ -41,7 +41,7 @@
     color: #646464;
     font-weight: 350;
     text-align: center;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
@@ -62,7 +62,7 @@
     color: #646464;
     font-weight: 350;
     text-align: center;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
@@ -81,23 +81,23 @@
 }
 
 .projects-search {
-    color: #B9B9B9;
+    color: #b9b9b9;
     font-weight: 350;
-    font-family: 'FilsonPro', sans-serif;
-    
+    font-family: "FilsonPro", sans-serif;
+
     border: none;
     background: #ffffff;
     border-radius: clamp(47px, 5.38vw, 93px);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-    
+
     /* 1728 */
-    
+
     width: clamp(538px, 62.26vw, 1076px);
     height: clamp(34px, 5.21vw, 68px);
-    
+
     font-size: clamp(12px, 1.85vw, 24px);
     padding-left: clamp(20px, 2.31vw, 40px);
-    
+
     margin-bottom: clamp(29px, 3.41vw, 59px);
 }
 
@@ -110,7 +110,7 @@
 .filters-container {
     display: block;
     height: fit-content;
-    
+
     background: #ffffff;
     border-radius: 80px 0 0 80px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -132,7 +132,7 @@
     color: #ff7700;
     font-weight: 700;
     text-align: center;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
@@ -143,7 +143,7 @@
     color: #007095;
     font-weight: 700;
     text-align: right;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
@@ -155,12 +155,14 @@
     cursor: pointer;
     font-weight: 700;
     text-align: right;
-    font-family: 'FilsonPro', sans-serif;
+    font-family: "FilsonPro", sans-serif;
 
     /* 1728 */
 
     font-size: clamp(10px, 1.0416vw, 20px);
-    transition: color 0.2s ease, transform 0.15s ease;
+    transition:
+        color 0.2s ease,
+        transform 0.15s ease;
 }
 
 .filters-container h5:hover {

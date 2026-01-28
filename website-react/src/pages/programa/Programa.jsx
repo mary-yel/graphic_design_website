@@ -22,8 +22,6 @@ import Semestre6 from "../../assets/svgs/inicio/Semestre1.svg";
 import Semestre7 from "../../assets/svgs/inicio/Semestre1.svg";
 import Semestre8 from "../../assets/svgs/inicio/Semestre1.svg";
 
-import Footer from "../../components/footer/Footer";
-
 export default function Programa() {
     return (
         <div className="program-page-container">
@@ -130,8 +128,6 @@ export default function Programa() {
                     </p>
                 </div>
             </div>
-
-            <Footer />
         </div>
     );
 }
