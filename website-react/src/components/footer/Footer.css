@@ -10,13 +10,13 @@
 
 .footer-esq {
     position: relative;
-    height: clamp(145px, 15.052vw, 289px);
+    height: clamp(129px, 14.98vw, 258px);
 }
 
 .esquinero-footer {
     position: absolute;
     pointer-events: none;
-    width: clamp(145px, 15.052vw, 289px);
+    width: clamp(129px, 14.98vw, 258px);
 }
 
 .esquinero-footer-left {
@@ -37,7 +37,7 @@
 .footer-body {
     position: relative;
     background-color: #007095;
-    padding: clamp(41px, 4.218vw, 81px);
+    padding: clamp(41px, 4.68vw, 81px);
 }
 
 .footer-top {
@@ -45,19 +45,19 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ffffff;
-    padding-bottom: clamp(12.5px, 2.08vw, 40px);
+    padding-bottom: clamp(12.5px, 2.31vw, 40px);
 }
 
 /* Información izquierda: */
 
 .footer-info-left {
-    width: clamp(193px, 20.1vw, 386px);
-    height: clamp(58px, 6.19vw, 119px);
+    width: clamp(193px, 22.33vw, 386px);
+    height: clamp(58px, 6.88vw, 119px);
 
     color: #ffffff;
     font-weight: 400;
     font-family: "Poppins", sans-serif;
-    font-size: clamp(8px, 0.83vw, 16px);
+    font-size: clamp(8px, 0.92vw, 16px);
 }
 
 /* Logos institucionales: */
@@ -75,6 +75,16 @@
 #Acreditacion {
     width: clamp(67px, 6.97vw, 134px);
     height: clamp(33px, 3.38vw, 65px);
+}
+
+#Separador_pie_1 {
+    height: clamp(27px, 2.77vw, 48px);
+    padding-right: clamp(10px, 1.15vw, 20px);
+}
+
+#Separador_pie_2 {
+    height: clamp(27px, 2.77vw, 48px);
+    padding-left: clamp(10px, 1.15vw, 20px);
 }
 
 #LogoDiseno {

@@ -43,8 +43,7 @@ const proyectos = [Proyecto1, Proyecto2, Proyecto3, Proyecto4, Proyecto5, Proyec
 export default function Inicio() {
     return (
         <div className="inicio-container">
-
-            <section className="illustration-section">
+            {/* <section className="illustration-section">
                 <img src={Collage1} className="banner-img img-1" alt="Collage 1" />
                 <img src={Collage2} className="banner-img img-2" alt="Collage 2" />
             </section>
@@ -143,7 +142,7 @@ export default function Inicio() {
                 <NavLink to="/proyectos" className="btn-ver-mas">
                     Ver Más
                 </NavLink>
-            </section>
+            </section> */}
         </div>
     );
 }

@@ -4,6 +4,8 @@ import Logo1 from "../../assets/svgs/inicio/LogoUniversidad.svg";
 import Logo2 from "../../assets/svgs/inicio/LogoAcreditacion.svg";
 import Logo3 from "../../assets/svgs/inicio/LogoDiseno.svg";
 
+import Separador from "../../assets/svgs/inicio/Separador.svg";
+
 import Adorno4 from "../../assets/svgs/inicio/AdornoTipo4.svg";
 
 export default function Footer() {
@@ -24,7 +26,9 @@ export default function Footer() {
 
                     <div className="footer-logo">
                         <img src={Logo1} alt="Logo Universidad" id="Universidad" />
+                        <img src={Separador} alt="Separador" id="Separador_pie_1" />
                         <img src={Logo2} alt="Logo Acreditación" id="Acreditacion" />
+                        <img src={Separador} alt="Separador" id="Separador_pie_2" />
                         <img src={Logo3} alt="Logo Diseño Gráfico" id="LogoDiseno" />
                     </div>
 
