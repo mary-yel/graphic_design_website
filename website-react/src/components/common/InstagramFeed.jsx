@@ -1,7 +1,17 @@
-export default function InstagramFeed() {
+import "./InstagramFeed.css";
+
+export default function InstagramFeed({ imagen, link }) {
     return (
-        <div className="instagram-container">
-            <iframe src="https://www.instagram.com/disenograficoudes/?igsh=MWx4bzNtZmNqY3B2dQ%3D%3D#" width="320" height="440" frameBorder="0" scrolling="no" allowTransparency="true" style={{ borderRadius: "20px" }}></iframe>
-        </div>
+        <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="instagram-container"
+        >
+            {imagen 
+                ? <img src={imagen} alt="Instagram" /> 
+                : <div className="img-placeholder" />
+            }
+        </a>
     );
 }

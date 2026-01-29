@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "FilsonPro";
+    src: url("../../assets/fonts/FilsonProRegular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "FilsonProMedium";
+    src: url("../../assets/fonts/FilsonProMedium.otf") format("opentype");
+}
+
+.plan-section {
+    width: 100%;
+    overflow-x: visible;
+}
+
+.plan-title {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(24px, 2.77vw, 48px);
+    font-family: "FilsonProMedium", Helvetica;
+}
+
+.plan-title img {
+    width: clamp(12px, 2.48vw, 43px);
+    height: clamp(12px, 2.48vw, 43px);
+}
+
+.plan-description {
+    display: flex;
+    color: #646464;
+
+    margin-top: clamp(4px, 1.85vw, 8px);
+    margin-bottom: clamp(8px, 1.85vw, 16px);
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 350;
+    font-size: clamp(16px, 1.85vw, 32px);
+    font-family: "FilsonPro", Helvetica;
+}
+
+.plan-slider {
+    display: flex;
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    gap: clamp(10px, 1.15vw, 20px);
+    height: clamp(230px, 26.62vw, 460px);
+}
+
+.plan-slider img {
+    width: clamp(458px, 79.62vw, 1376px);
+    height: clamp(151px, 26.21vw, 453px);
+}

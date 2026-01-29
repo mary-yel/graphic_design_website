@@ -181,7 +181,7 @@
     top: -20%;
 }
 
-/* Plan de estudios: */
+/* Plan de estudios:
 
 .program-information {
     display: flex;
@@ -243,4 +243,4 @@
     margin-right: auto;
 
     width: clamp(420px, 65.72vw, 1262px);
-}
+} */

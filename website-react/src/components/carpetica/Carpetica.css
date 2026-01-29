@@ -1,82 +1,111 @@
+@font-face {
+    font-family: "FilsonProBlack";
+    src: url("../../assets/fonts/FilsonProBlack.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "FilsonPro";
+    src: url("../../assets/fonts/FilsonProRegular.otf") format("opentype");
+}
+
 :root {
     --color-dark-orange: #ec6b34;
     --color-primary-blue: #007095;
-    --border-thickness: 15px;
+    --border-thickness: clamp(5px, 0.57vw, 10px);
 }
 
 .carpetica {
-    width: 100%;
-    max-width: 320px;
-    aspect-ratio: 1 / 0.85;
-    background-color: var(--color-dark-orange);
+    width: clamp(181px, 20.94vw, 362px);
+    height: clamp(182px, 21.12vw, 365px);
+
+    display: flex;
     position: relative;
-    border-radius: 45px;
+    align-items: center;
+    justify-content: center;
+    border-radius: clamp(40px, 4.62vw, 80px);
+
     padding: var(--border-thickness);
-    box-sizing: border-box;
+    background-color: var(--color-dark-orange);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carpetica:hover {
+    transform: translateY(-8px);
 }
 
 .carpetica-top {
-    width: 100%;
-    height: 100%;
-    position: relative;
     overflow: hidden;
-    border-radius: 30px;
-    background-color: white;
+    width: clamp(165px, 19.15vw, 331px);
+    height: clamp(166px, 19.21vw, 332px);
+    border-radius: clamp(31px, 3.58vw, 62px);
 }
 
 .carpetica-top img {
-    width: 101%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: clamp(165px, 19.15vw, 331px);
+    height: clamp(166px, 19.21vw, 332px);
 }
 
-.carpetica-top::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 45%;
-    background-color: var(--color-dark-orange);
-    border-top-right-radius: 40px;
-    z-index: 1;
+.carpetica-label,
+.carpetica-date {
+    pointer-events: none;
 }
 
 .carpetica-label {
-    position: absolute;
-    z-index: 2;
-    bottom: 42%;
     left: 0;
+    z-index: 2;
+    position: absolute;
+    display: inline-flex;
+    
+    color: #ffffff;
+    font-weight: 400;
+    font-size: clamp(10px, 1.15vw, 20px);
     background-color: var(--color-dark-orange);
-    color: white;
-    font-family: "Filson Pro-Regular", Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 6px 18px;
-    border-radius: 0 15px 15px 0;
-    white-space: nowrap;
+    font-family: "FilsonPro", Helvetica, sans-serif;
+
+    padding: clamp(8px, 0.92vw, 16px) clamp(11px, 1.27vw, 22px)
+                clamp(8px, 0.92vw, 16px) clamp(9px, 1.04vw, 18px);
+    border-radius: 0 clamp(25px, 2.89vw, 50px) clamp(25px, 2.89vw, 50px) 0;
 }
 
 .carpetica-date {
     position: absolute;
-    z-index: 2;
-    bottom: 12%;
-    left: 15px;
-    color: white;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: clamp(173px, 20.08vw, 347px);
+    height: clamp(82px, 9.54vw, 165px);
+
+    color: #ffffff;
+    background-color: var(--color-dark-orange);
+    font-family: "FilsonPro", Helvetica, sans-serif;
+
     line-height: 1;
+    gap: clamp(5px, 0.57vw, 10px);
+    padding: clamp(13px, 1.5vw, 26px) clamp(20px, 2vw, 40px)
+            clamp(31px, 3.58vw, 62px) clamp(12px, 1vw, 20px);
+
+    border-radius: 0 clamp(20px, 2.31vw, 40px) clamp(40px, 4.62vw, 80px) clamp(40px, 4.62vw, 80px);
+
 }
 
 .dia {
-    font-family: "Filson Pro-Black", Helvetica, sans-serif;
-    font-size: 32px;
+    line-height: 1;
     font-weight: 900;
+    font-size: clamp(20px, 2.31vw, 40px);
+    font-family: "FilsonProBlack", Helvetica, sans-serif;
 }
 
 .mes {
-    font-family: "Filson Pro-Regular", Helvetica, sans-serif;
-    font-size: 16px;
+    line-height: 1;
     text-transform: uppercase;
-    margin-left: 5px;
+    transform: translateY(3px);
+    font-size: clamp(12px, 1.38vw, 24px);
+    font-family: "FilsonPro", Helvetica, sans-serif;
 }

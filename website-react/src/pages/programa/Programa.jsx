@@ -13,14 +13,14 @@ import Desliza from "../../assets/svgs/inicio/Desliza.svg";
 
 import Icon from "../../assets/svgs/programa/icon.svg";
 
-import Semestre1 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre2 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre3 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre4 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre5 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre6 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre7 from "../../assets/svgs/inicio/Semestre1.svg";
-import Semestre8 from "../../assets/svgs/inicio/Semestre1.svg";
+import Semestre1 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre2 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre3 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre4 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre5 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre6 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre7 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre8 from "../../assets/svgs/programa/Semestre1.svg";
 
 export default function Programa() {
     return (
