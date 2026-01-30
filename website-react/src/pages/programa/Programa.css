@@ -217,6 +217,7 @@
 }
 
 /*     INFORMACIÓN COMPLETA:      */
+
 .gap {
     margin-top: clamp(32px, 5.55vw, 96px);
 }
