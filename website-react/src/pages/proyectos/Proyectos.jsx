@@ -14,24 +14,21 @@ import Project6 from "../../assets/svgs/proyectos/ImagenProyecto6.svg";
 import Project7 from "../../assets/svgs/proyectos/ImagenProyecto7.svg";
 import Project8 from "../../assets/svgs/proyectos/ImagenProyecto8.svg";
 import Project9 from "../../assets/svgs/proyectos/ImagenProyecto9.svg";
+import Project10 from "../../assets/svgs/proyectos/ImagenProyecto10.svg";
+import Project11 from "../../assets/svgs/proyectos/ImagenProyecto11.svg";
 
 const proyectos = [
     { id: 1, title: "Alpina Design Challenge", author: "Brunnibert", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project1, tags: [] },
-    { id: 2, title: "Las verduras de Sofi", author: "Dalania, Brunnibert", desc: "Cuento infantil Ilustrado donde se relata la realidad de algunos niños que trabajan desde temprana edad. ", img: Project2, tags: [] },
-    { id: 3, title: "Documentales Matronas ", author: "Saray Banda", desc: "Aquí pueden mirar la historia junto  lo saberes ancestrales.", img: Project3, tags: [] },
-    { id: 4, title: "Audioslave", author: "-", desc: "Ilustraciones digitales para proyectos de aula donde se retratan canciones de álbumes de los artistas favoritos de cada estudiante y lo que sienten.", img: Project4, tags: [] },
-    { id: 5, title: "Madre de marfil", author: "Mariangel Montero Laino", desc: "Libro ilustrado: “A pesar de pensar lo contrario, una niña aprende que tanto le afecta la ausencia de su madre.”", img: Project5, tags: [] },
-    { id: 6, title: "Pastelitos el flaco", author: "Mariangel Montero, Santiago Tapia y Juan Pablo Diaz", desc: "Convertir el puesto de un vendedor ambulante en una marca con su propia identidad.", img: Project6, tags: [] },
-    { id: 7, title: "Fotografía Bodegón", author: "Jhon Campo", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project7, tags: [] },
-    { id: 8, title: "Folleto Festival Vallenato", author: "Mariangel Montero", desc: "Se rescató de manera ilustrada la tradición vallenata de su festival anual en un folleto .", img: Project8, tags: [] },
-    {
-        id: 9,
-        title: "Callejón de los Loritos",
-        author: "Andres Beleño y Saray Banda",
-        desc: "Libro ilustrado infantil sobre realidades que atraviesan los más pequeños de Valledupar como vendedores informales de manera ambulante.",
-        img: Project9,
-        tags: [],
-    },
+    { id: 2, title: "Folleto Festival Vallenato", author: "Mariangel Montero", desc: "Se rescató de manera ilustrada la tradición vallenata de su festival anual en un folleto.", img: Project2, tags: [] },
+    { id: 3, title: "Aldea en 3D", author: "Alvaro Junior Basto", desc: "El ejercicio académico era crear un espacio en 3D con la plataforma de Blender en “Low poly”.", img: Project3, tags: [] },
+    { id: 4, title: "Paradoja 67", author: "Arath Dominguez", desc: "Seguir las pistas es su única salida. Un mensaje encriptado y la omnipresencia del número 67 arrastran a un joven hacia una realidad distorsionada.", img: Project4, tags: [] },
+    { id: 5, title: "Las verduras de Sofi", author: "Dalania, Brunnibert", desc: "Cuento infantil Ilustrado donde se relata la realidad de algunos niños que trabajan desde temprana edad. ", img: Project5, tags: [] },
+    { id: 6, title: "Documentales Matronas ", author: "Saray Banda", desc: "Aquí pueden mirar la historia junto  lo saberes ancestrales.", img: Project6, tags: [] },
+    { id: 7, title: "Audioslave", author: "-", desc: "Ilustraciones digitales para proyectos de aula donde se retratan canciones de álbumes de los artistas favoritos de cada estudiante y lo que sienten.", img: Project7, tags: [] },
+    { id: 8, title: "Madre de marfil", author: "Mariangel Montero Laino", desc: "Libro ilustrado: “A pesar de pensar lo contrario, una niña aprende que tanto le afecta la ausencia de su madre.”", img: Project8, tags: [] },
+    { id: 9, title: "Pastelitos el flaco", author: "Mariangel Montero, Santiago Tapia y Juan Pablo Diaz", desc: "Convertir el puesto de un vendedor ambulante en una marca con su propia identidad.", img: Project9, tags: [] },
+    { id: 10, title: "Fotografía Bodegón", author: "Jhon Campo", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project10, tags: [] },
+    { id: 11, title: "Callejón de los Loritos", author: "Andres Beleño y Saray Banda", desc: "Libro ilustrado infantil sobre realidades que atraviesan los más pequeños de Valledupar como vendedores informales de manera ambulante.", img: Project11, tags: [] },
 ];
 
 export default function Proyectos() {
@@ -73,18 +70,6 @@ export default function Proyectos() {
 
                 <div className="filters-container">
                     <h3>Filtros</h3>
-
-                    {/* <h4>Más populares</h4>
-
-                    <h5 className={activeTag === "ilustracion" ? "active" : ""} onClick={() => handleTagClick("ilustracion")}>Ilustración</h5>
-
-                    <h5 className={activeTag === "audiovisuales" ? "active" : ""} onClick={() => handleTagClick("audiovisuales")}>Audiovisuales</h5>
-
-                    <h5 className={activeTag === "animacion" ? "active" : ""} onClick={() => handleTagClick("animacion")}>Animación</h5>
-
-                    <h5 className={activeTag === "interfaces" ? "active" : ""} onClick={() => handleTagClick("interfaces")}>Interfaces</h5>
-
-                    <h5 className={activeTag === "modelado_3D" ? "active" : ""} onClick={() => handleTagClick("modelado_3D")}>Modelado 3D</h5> */}
 
                     <h4>General</h4>
 
