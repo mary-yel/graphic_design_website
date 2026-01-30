@@ -62,7 +62,7 @@ export default function Semilleros() {
                 />
                 <LongSeed
                     logo={COscuraLogo}
-                    descp="Cámara Oscura Preservar y promover la identidad cultural del César a través de la producción audiovisual y fotográfica, destacando su patrimonio, expresiones culturales, mitos y leyendas."
+                    descp="Cámara Oscura busca preservar y promover la identidad cultural del César a través de la producción audiovisual y fotográfica, destacando su patrimonio, expresiones culturales, mitos y leyendas."
                     etiquetas={["Exploración", "Difusión"]}
                     galeria={[COscuraImagen1, COscuraImagen2]}
                     feed={COscuraImagen3}
