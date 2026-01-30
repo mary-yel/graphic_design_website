@@ -5,6 +5,7 @@ import Proyectos from "../pages/proyectos/Proyectos";
 import Programa from "../pages/programa/Programa";
 import Novedades from "../pages/novedades/Novedades";
 import Semilleros from "../pages/semilleros/Semilleros";
+import Final from "../pages/final/Final";
 import AppLayout from "../components/layout/AppLayout";
 
 const router = createHashRouter([
@@ -32,6 +33,10 @@ const router = createHashRouter([
             {
                 path: "semilleros",
                 element: <Semilleros />,
+            },
+            {
+                path: "final",
+                element: <Final />,
             },
         ],
     },

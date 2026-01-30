@@ -28,7 +28,7 @@ export default function Header({ variant = "default" }) {
                     Semilleros
                 </NavLink>
 
-                <NavLink to="/" className="HEADER-icon-right">
+                <NavLink to="/final" className="HEADER-icon-right">
                     <img src={menuIcon} alt="Menú" />
                 </NavLink>
             </nav>
