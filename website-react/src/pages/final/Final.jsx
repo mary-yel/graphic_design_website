@@ -1,6 +1,6 @@
 import "./Final.css";
 
-import Agradecimiento from "../../assets/svgs/final/final.svg";
+import Agradecimiento from "../../assets/svgs/final/Final.svg";
 
 export default function Final() {
     return (

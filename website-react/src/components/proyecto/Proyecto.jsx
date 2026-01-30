@@ -17,7 +17,10 @@ export default function Proyecto({ title, author, desc, img, link }) {
 
                 <img src={click_icon} className="click_icon" alt="icono-clickable" />
 
-                <button className="project-button-more" onClick={() => window.open(link, "_blank")} > Ver Más </button>
+                <button className="project-button-more" onClick={() => window.open(link, "_blank")}>
+                    {" "}
+                    Ver Más{" "}
+                </button>
             </div>
         </article>
     );

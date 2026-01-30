@@ -1,6 +1,6 @@
 import "./ShortSeed.css";
 
-export default function ShortSeed({title, descp, date, imagen }) {
+export default function ShortSeed({ title, descp, date, imagen }) {
     return (
         <div className="short-seed-container">
             <div className="short-seed-img">{imagen ? <img src={imagen} alt="logo_semillero" /> : <div className="img-placeholder" />}</div>

@@ -14,13 +14,12 @@
     width: clamp(339px, 70.78vw, 1359px);
     height: clamp(154px, 32.23vw, 619px);
 
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
 }
 
 .final-container img:hover {
     transform: scale(1.02);
-    filter:
-        brightness(1.08)
-        drop-shadow(0 0 8px rgba(255, 223, 0, 0.45))
-        drop-shadow(0 0 18px rgba(255, 200, 0, 0.35));
+    filter: brightness(1.08) drop-shadow(0 0 8px rgba(255, 223, 0, 0.45)) drop-shadow(0 0 18px rgba(255, 200, 0, 0.35));
 }

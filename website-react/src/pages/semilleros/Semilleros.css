@@ -39,7 +39,7 @@
 
 /*          SEMILLEROS:           */
 
-.seed-resumen-section  {
+.seed-resumen-section {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -84,7 +84,9 @@
     width: clamp(110px, 19.09vw, 330px);
     height: clamp(130px, 22.62vw, 391px);
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .seed-projects-section img:hover {

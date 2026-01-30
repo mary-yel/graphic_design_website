@@ -7,7 +7,7 @@
 
 .short-seed-container {
     width: clamp(340px, 59.08vw, 1021px);
-    height: clamp(87px, 15.10vw, 261px);
+    height: clamp(87px, 15.1vw, 261px);
 
     display: flex;
     align-items: center;
@@ -19,7 +19,9 @@
 
     margin: clamp(10px, 1.73vw, 30px) 0;
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .short-seed-container:hover {
@@ -82,7 +84,7 @@
 .short-seed-text h4 {
     margin: 0;
     font-weight: 600;
-    color: #036EFC;
+    color: #036efc;
     font-style: italic;
     font-family: "Instrument Sans";
     font-size: clamp(6px, 1.15vw, 20px);
@@ -98,7 +100,7 @@
     border: 0;
     color: #ffffff;
     border-radius: 100px;
-    background: #EF6A35;
+    background: #ef6a35;
     font-family: "FilsonPro";
     font-size: clamp(6px, 1.15vw, 20px);
 
