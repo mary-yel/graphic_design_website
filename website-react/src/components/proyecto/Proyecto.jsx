@@ -3,7 +3,7 @@ import "./Proyecto.css";
 // Recursos:
 import click_icon from "../../assets/svgs/proyectos/Click_icon.svg";
 
-export default function Proyecto({ title, author, desc, img }) {
+export default function Proyecto({ title, author, desc, img, link }) {
     return (
         <article className="project-container">
             <img src={img} className="preview-project" alt={`Miniatura del proyecto ${title}`} />
@@ -17,7 +17,7 @@ export default function Proyecto({ title, author, desc, img }) {
 
                 <img src={click_icon} className="click_icon" alt="icono-clickable" />
 
-                <button className="project-button-more">Ver Más</button>
+                <button className="project-button-more" onClick={() => window.open(link, "_blank")} > Ver Más </button>
             </div>
         </article>
     );

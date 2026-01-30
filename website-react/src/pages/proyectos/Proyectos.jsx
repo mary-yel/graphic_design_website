@@ -16,19 +16,25 @@ import Project8 from "../../assets/svgs/proyectos/ImagenProyecto8.svg";
 import Project9 from "../../assets/svgs/proyectos/ImagenProyecto9.svg";
 import Project10 from "../../assets/svgs/proyectos/ImagenProyecto10.svg";
 import Project11 from "../../assets/svgs/proyectos/ImagenProyecto11.svg";
+import Project12 from "../../assets/svgs/proyectos/ImagenProyecto12.svg";
+import Project13 from "../../assets/svgs/proyectos/ImagenProyecto13.svg";
+import Project14 from "../../assets/svgs/proyectos/ImagenProyecto14.svg";
 
 const proyectos = [
-    { id: 1, title: "Alpina Design Challenge", author: "Brunnibert", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project1, tags: [] },
-    { id: 2, title: "Folleto Festival Vallenato", author: "Mariangel Montero", desc: "Se rescató de manera ilustrada la tradición vallenata de su festival anual en un folleto.", img: Project2, tags: [] },
-    { id: 3, title: "Aldea en 3D", author: "Alvaro Junior Basto", desc: "El ejercicio académico era crear un espacio en 3D con la plataforma de Blender en “Low poly”.", img: Project3, tags: [] },
-    { id: 4, title: "Paradoja 67", author: "Arath Dominguez", desc: "Seguir las pistas es su única salida. Un mensaje encriptado y la omnipresencia del número 67 arrastran a un joven hacia una realidad distorsionada.", img: Project4, tags: [] },
-    { id: 5, title: "Las verduras de Sofi", author: "Dalania, Brunnibert", desc: "Cuento infantil Ilustrado donde se relata la realidad de algunos niños que trabajan desde temprana edad. ", img: Project5, tags: [] },
-    { id: 6, title: "Documentales Matronas ", author: "Saray Banda", desc: "Aquí pueden mirar la historia junto  lo saberes ancestrales.", img: Project6, tags: [] },
-    { id: 7, title: "Audioslave", author: "-", desc: "Ilustraciones digitales para proyectos de aula donde se retratan canciones de álbumes de los artistas favoritos de cada estudiante y lo que sienten.", img: Project7, tags: [] },
-    { id: 8, title: "Madre de marfil", author: "Mariangel Montero Laino", desc: "Libro ilustrado: “A pesar de pensar lo contrario, una niña aprende que tanto le afecta la ausencia de su madre.”", img: Project8, tags: [] },
-    { id: 9, title: "Pastelitos el flaco", author: "Mariangel Montero, Santiago Tapia y Juan Pablo Diaz", desc: "Convertir el puesto de un vendedor ambulante en una marca con su propia identidad.", img: Project9, tags: [] },
-    { id: 10, title: "Fotografía Bodegón", author: "Jhon Campo", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project10, tags: [] },
-    { id: 11, title: "Callejón de los Loritos", author: "Andres Beleño y Saray Banda", desc: "Libro ilustrado infantil sobre realidades que atraviesan los más pequeños de Valledupar como vendedores informales de manera ambulante.", img: Project11, tags: [] },
+    { id: 1, title: "Alpina Design Challenge", author: "Brunnibert", desc: "Concurso de la empresa de lácteos Alpina, donde uno de nuestros mejores estudiantes participó, quedando entre los 3 finalistas de su categoría.", img: Project1, tags: ["ilustracion"], link:"https://www.instagram.com/p/DLarND5vRwo/?igsh=cjh2eDhjbzFxODl3" },
+    { id: 2, title: "Folleto Festival Vallenato", author: "Mariangel Montero", desc: "Se rescató de manera ilustrada la tradición vallenata de su festival anual en un folleto.", img: Project2, tags: ["editorial", "ilustracion"] },
+    { id: 3, title: "Aldea en 3D", author: "Alvaro Junior Basto", desc: "El ejercicio académico era crear un espacio en 3D con la plataforma de Blender en “Low poly”.", img: Project3, tags: ["modelado3D"] },
+    { id: 4, title: "Paradoja 67", author: "Arath Dominguez", desc: "Seguir las pistas es su única salida. Un mensaje encriptado y la omnipresencia del número 67 arrastran a un joven hacia una realidad distorsionada.", img: Project4, tags: ["audiovisuales"] },
+    { id: 5, title: "Las verduras de Sofi", author: "Dalania, Brunnibert", desc: "Cuento infantil Ilustrado donde se relata la realidad de algunos niños que trabajan desde temprana edad. ", img: Project5, tags: ["editorial", "ilustracion"] },
+    { id: 6, title: "Documentales Matronas ", author: "Saray Banda", desc: "Aquí pueden mirar la historia junto  lo saberes ancestrales.", img: Project6, tags: ["audiovisuales"] },
+    // { id: 7, title: "Audioslave", author: "-", desc: "Ilustraciones digitales para proyectos de aula donde se retratan canciones de álbumes de los artistas favoritos de cada estudiante y lo que sienten.", img: Project7, tags: [] },
+    { id: 8, title: "Madre de marfil", author: "Mariangel Montero Laino", desc: "Libro ilustrado: “A pesar de pensar lo contrario, una niña aprende que tanto le afecta la ausencia de su madre.”", img: Project8, tags: ["editorial", "ilustracion"] },
+    { id: 9, title: "Pastelitos el flaco", author: "Mariangel Montero, Santiago Tapia y Juan Pablo Diaz", desc: "Convertir el puesto de un vendedor ambulante en una marca con su propia identidad.", img: Project9, tags: ["identidadVisual"] },
+    { id: 10, title: "Fotografía Bodegón", author: "Jhon Campo", desc: "Producto con una ambientación calida dramatica dando un aire a lo mediterraneo.", img: Project10, tags: ["fotografia"] },
+    { id: 11, title: "Callejón de los Loritos", author: "Andres Beleño y Saray Banda", desc: "Libro ilustrado infantil sobre realidades que atraviesan los más pequeños de Valledupar como vendedores informales de manera ambulante.", img: Project11, tags: ["editorial", "ilustracion"] },
+    { id: 12, title: "Prototipo de Sitio Web UDES", author: "Mary Yel y Brunnibert", desc: "Diseño de prototipo.", img: Project12, tags: ["interfaces"] },
+    { id: 13, title: "Estampilla Flor Trinitaria", author: "Juan Camilo Zaraza", desc: "Estampilla ilustrada para la ciudad de Valledupar, con temática principal a la flor trinitaria y la convierte en un personaje  en la plaza del centro histórico.", img: Project13, tags: ["ilustracion"] },
+    { id: 14, title: "Vibrato", author: "Juliana Araujo", desc: "Consistió en el diseño conceptual de una aplicación móvil, con el objetivo de aplicar la integración de los conceptos fundamentales de diseño de interfaces vistos en clase.", img: Project14, tags: ["interfaces"] },
 ];
 
 export default function Proyectos() {
@@ -64,7 +70,7 @@ export default function Proyectos() {
                     {filteredProjects.length === 0 && <h4>No se encontraron proyectos . . .</h4>}
 
                     {filteredProjects.map((item) => (
-                        <Proyecto key={item.id} title={item.title} author={item.author} desc={item.desc} img={item.img} />
+                        <Proyecto key={item.id} title={item.title} author={item.author} desc={item.desc} img={item.img} link={item.link}/>
                     ))}
                 </div>
 
@@ -73,31 +79,31 @@ export default function Proyectos() {
 
                     <h4>General</h4>
 
-                    <h5 className={activeTag === "animacion" ? "active" : ""} onClick={() => handleTagClick("animacion")}>
-                        Animación
-                    </h5>
-
                     <h5 className={activeTag === "audiovisuales" ? "active" : ""} onClick={() => handleTagClick("audiovisuales")}>
                         Audiovisuales
                     </h5>
 
                     <h5 className={activeTag === "editorial" ? "active" : ""} onClick={() => handleTagClick("editorial")}>
-                        Editorial
+                        Editorial 
                     </h5>
 
-                    <h5 className={activeTag === "identidad_visual" ? "active" : ""} onClick={() => handleTagClick("identidad_visual")}>
+                    <h5 className={activeTag === "identidadVisual" ? "active" : ""} onClick={() => handleTagClick("identidadVisual")}>
                         Identidad Visual
                     </h5>
 
+                    <h5 className={activeTag === "fotografia" ? "active" : ""} onClick={() => handleTagClick("fotografia")}>
+                        Fotografía
+                    </h5>
+
                     <h5 className={activeTag === "interfaces" ? "active" : ""} onClick={() => handleTagClick("interfaces")}>
-                        Interfaces
+                        Interfaces 
                     </h5>
 
                     <h5 className={activeTag === "ilustracion" ? "active" : ""} onClick={() => handleTagClick("ilustracion")}>
-                        Ilustración
+                        Ilustración 
                     </h5>
 
-                    <h5 className={activeTag === "modelado_3D" ? "active" : ""} onClick={() => handleTagClick("modelado_3D")}>
+                    <h5 className={activeTag === "modelado3D" ? "active" : ""} onClick={() => handleTagClick("modelado3D")}>
                         Modelado 3D
                     </h5>
                 </div>
