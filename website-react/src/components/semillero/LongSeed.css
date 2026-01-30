@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "FilsonPro";
+    src: url("../../assets/fonts/FilsonProRegular.otf") format("opentype");
+}
+
+/*             CUERPO:            */
+
+.long-seed-container {
+    width: clamp(371px, 85.99vw, 1486px);
+    height: clamp(169px, 39.17vw, 677px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(13px, 2.31vw, 40px) clamp(33px, 5.78vw, 100px);
+
+    background-color: #ffffff;
+    border-radius: 0 clamp(33px, 5.78vw, 100px);
+    box-shadow: 0 0 clamp(8px, 1.44vw, 25px) 0 rgba(3, 110, 252, 0.25);
+
+    margin-bottom: clamp(23px, 4.05vw, 70px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.long-seed-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/*        PRIMERA SECCIÓN:        */
+
+.long-seed-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.long-seed-logo img {
+    object-fit: contain;
+    width: clamp(51px, 8.96vw, 155px);
+    height: clamp(53.6px, 10vw, 161px);
+}
+
+.long-seed-logo h2 {
+    text-align: center;
+    font-family: "FilsonPro";
+    font-size: clamp(10px, 1.85vw, 32px);
+}
+
+/*        SEGUNDA SECCIÓN:        */
+
+.long-seed-info {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between; 
+
+    width: clamp(211px, 36.74vw, 635px);
+    margin-right: clamp(33px, 5.78vw, 100px);
+}
+
+.long-seed-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 2.08vw, 36px);
+}
+
+.long-seed-tag {
+    width: clamp(55px, 9.54vw, 165px);
+
+    color: #ffffff;
+    font-weight: 400;
+    background: #EC6B34;
+    font-family: "FilsonPro";
+    font-size: clamp(6px, 1.27vw, 22px);
+    
+    text-align: center;
+    padding: clamp(3px, 0.57vw, 10px);
+    border-radius: clamp(66px, 11.57vw, 200px);
+}
+
+.long-seed-descp {
+    font-weight: 350;
+    text-align: justify;
+    font-family: "FilsonPro";
+    font-size: clamp(8px, 1.38vw, 24px);
+    margin-bottom: clamp(16px, 2.89vw, 50px);
+}
+
+.long-seed-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(13px, 2.31vw, 40px);
+}
+
+.long-seed-gallery img {
+    height: clamp(101px, 17.65vw, 305px);
+}
+
+@media (max-width: 570px) {
+    .long-seed-gallery img {
+        display: none;
+    }
+
+    .long-seed-info {
+        margin-left: 10px;
+        margin-right: 15px;
+    }
+
+    .long-seed-logo h2 {
+        display: none;
+    }
+}
+
+/*        TERCERA SECCIÓN:        */
+
+.long-seed-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.long-seed-social h4 {
+    color: #007095;
+    font-weight: 400;
+    font-family: "FilsonPro";
+    margin-bottom: 0;
+    font-size: clamp(9px, 1.62vw, 28px);
+}
+
+.long-seed-social .instagram-container {
+    width: clamp(81px, 18.75vw, 324px);
+    height: clamp(129px, 29.97vw, 518px);
+}

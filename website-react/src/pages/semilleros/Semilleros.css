@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "FilsonPro";
+    src: url("../../assets/fonts/FilsonProRegular.otf") format("opentype");
+}
+
+/*      TÍTULO Y SUBTÍTULO:       */
+
+.seed-title-section {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.seed-title-section h1 {
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-family: "FilsonPro", sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(23px, 2.66vw, 46px);
+    margin-top: clamp(58px, 6.77vw, 117px);
+    margin-bottom: clamp(6px, 0.63vw, 11px);
+}
+
+.seed-title-section h4 {
+    color: #646464;
+    font-weight: 350;
+    text-align: center;
+    font-family: "FilsonPro", sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(12px, 1.38vw, 24px);
+    margin-top: clamp(6px, 0.63vw, 11px);
+    margin-bottom: clamp(19px, 2.19vw, 38px);
+}
+
+/*          SEMILLEROS:           */
+
+.seed-resumen-section  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*        MÁS INFORMACIÓN:        */
+
+.seed-section h1 {
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    font-family: "FilsonPro", sans-serif;
+
+    /* 1728 */
+
+    font-size: clamp(23px, 2.66vw, 46px);
+    margin-bottom: clamp(32px, 5.61vw, 97px);
+}
+
+.seed-section h1 .highlight {
+    color: #025674;
+}
+
+.seed-detail-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seed-projects-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: clamp(8px, 1.38vw, 24px);
+}
+
+.seed-projects-section img {
+    width: clamp(110px, 19.09vw, 330px);
+    height: clamp(130px, 22.62vw, 391px);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seed-projects-section img:hover {
+    transform: translateY(-8px);
+}

@@ -6,7 +6,6 @@
 
     aspect-ratio: 5/8;
     width: clamp(196px, 22.74vw, 393px);
-    height: clamp(349px, 40.45vw, 699px);
 
     transition:
         transform 0.25s ease,
@@ -15,7 +14,7 @@
 
 .instagram-container img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
 }
