@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(24px, 2.77vw, 48px);
+    font-size: clamp(16px, 2.77vw, 48px);
     font-family: "FilsonProMedium", Helvetica;
 }
 
@@ -59,6 +59,7 @@
 }
 
 .plan-slider img {
-    width: clamp(458px, 79.62vw, 1376px);
-    height: clamp(151px, 26.21vw, 453px);
+    width: clamp(380px, 70vw, 1200px);
+    height: auto;
+    display: block;
 }

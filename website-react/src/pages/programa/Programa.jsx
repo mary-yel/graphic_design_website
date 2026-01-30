@@ -1,5 +1,9 @@
 import "./Programa.css";
 
+// Componentes:
+import CareerPlan from "../../components/common/CareerPlan";
+
+// Recursos:
 import Adorno1 from "../../assets/svgs/inicio/AdornoTipo4.svg";
 
 import ProgramaIntro from "../../assets/svgs/programa/program-resumen.svg";
@@ -14,13 +18,15 @@ import Desliza from "../../assets/svgs/inicio/Desliza.svg";
 import Icon from "../../assets/svgs/programa/icon.svg";
 
 import Semestre1 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre2 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre3 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre4 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre5 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre6 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre7 from "../../assets/svgs/programa/Semestre1.svg";
-import Semestre8 from "../../assets/svgs/programa/Semestre1.svg";
+import Semestre2 from "../../assets/svgs/programa/Semestre2.svg";
+import Semestre3 from "../../assets/svgs/programa/Semestre3.svg";
+import Semestre4 from "../../assets/svgs/programa/Semestre4.svg";
+import Semestre5 from "../../assets/svgs/programa/Semestre5.svg";
+import Semestre6 from "../../assets/svgs/programa/Semestre6.svg";
+import Semestre7 from "../../assets/svgs/programa/Semestre7.svg";
+import Semestre8 from "../../assets/svgs/programa/Semestre8.svg";
+
+const semestres = [Semestre1, Semestre2, Semestre3, Semestre4, Semestre5, Semestre6, Semestre7, Semestre8,];
 
 export default function Programa() {
     return (
@@ -72,42 +78,45 @@ export default function Programa() {
             </div>
 
             <div className="program-information">
-                <h3 className="plan-title">
-                    Plan de Estudios
-                    <img src={Desliza} alt="icono de deslizar" />
-                </h3>
 
-                <div className="plan-slider">
-                    {[Semestre1, Semestre2, Semestre3, Semestre4, Semestre5, Semestre6, Semestre7, Semestre8].map((img, i) => (
-                        <img key={i} src={img} alt={`Semestre ${i + 1}`} />
-                    ))}
-                </div>
+                <CareerPlan
+                    subtitle="Plan de Estudios"
+                    description="Dale un vistazo deslizando lo que la UDES ofrece para ti."
+                    images={semestres}
+                    icon={Desliza}
+                />
 
-                <div className="info-text">
+                <div className="info-text gap">
                     <img src={Icon} className="quick-adorno" alt="adorno-parrafo" />
 
                     <p>
-                        Nuestro programa acoge a los amantes del arte, a los creativos insaciables, apasionados por la fotografía y el video, y a los que creen que la revolución digital necesita nuevos artistas que cambien el mundo.<br/>
+                        Nuestro programa acoge a los amantes del arte, a los creativos insaciables, apasionados por la fotografía y el video, y a los que creen que la revolución digital necesita nuevos artistas que cambien el mundo.
 
-                        DIRIGIDO A:<br/>
+                        <br /><br />
 
-                        Artistas, fotógrafos, productores audiovisuales, dibujantes, emprendedores y a todo aquel que considere la era digital como el precursor de las economías mundiales.<br/>
+                        DIRIGIDO A:
+                        
+                        <br /><br />
+
+                        Artistas, fotógrafos, productores audiovisuales, dibujantes, emprendedores y a todo aquel que considere la era digital como el precursor de las economías mundiales.
+
+                        <br /><br />
 
                         El estudiante que quiere ingresar al programa de Diseño Gráfico debe tener las siguientes cualidades:<br/>
-                    </p>
-                </div>
+                        <ul>
+                            <li>Ser humano con principios éticos y morales</li>
+                            <li>Respetuoso del medio ambiente y la diversidad</li>
+                            <li>Creativo, propositivo y asertivo en su desempeño</li>
+                            <li>Con capacidad para ser, pensar y obrar como un ciudadano global</li>
+                            <li>Sensible hacia el uso sostenible de los recursos naturales</li>
+                            <li>Con pensamiento crítico, espíritu investigativo, curioso e innovador</li>
+                            <li>Respetuoso de sus profesores y compañeros, con sentido de pertenencia hacia la institución</li>
+                            <li>Emprendedor y responsable</li>
+                        </ul>
 
-                <div className="info-text">
-                    <ul>
-                        <li>Ser humano con principios éticos y morales</li>
-                        <li>Respetuoso del medio ambiente y la diversidad</li>
-                        <li>Creativo, propositivo y asertivo en su desempeño</li>
-                        <li>Con capacidad para ser, pensar y obrar como un ciudadano global</li>
-                        <li>Sensible hacia el uso sostenible de los recursos naturales</li>
-                        <li>Con pensamiento crítico, espíritu investigativo, curioso e innovador</li>
-                        <li>Respetuoso de sus profesores y compañeros, con sentido de pertenencia hacia la institución</li>
-                        <li>Emprendedor y responsable</li>
-                    </ul>
+                        <br /><br />
+                    </p>
+
                 </div>
 
                 <div className="info-text">
@@ -115,6 +124,8 @@ export default function Programa() {
 
                     <p>
                         El profesional en Diseño Gráfico de la Universidad de Santander estará en capacidad de Conceptualizar, planear, proyectar y desarrollar propuestas y proyectos propios de la disciplina, que contribuyan de manera eficaz, respondiendo a las necesidades de la comunicación visual que demanda los sectores económicos, productivos y la sociedad en general, en medios análogos y digitales de una manera crítica, creativa y competente, actuando como profesional independiente o como parte de equipos multidisciplinarios con liderazgo y capacidad para integrar conocimiento, generando valor, desarrollo económico y humano.
+
+                        <br /><br />
                     </p>
                 </div>
 

@@ -1,53 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 .program-banner {
     display: flex;
     position: relative;
     justify-content: center;
 
     height: clamp(152px, 31.67vw, 608px);
-    margin-top: clamp(16px, 1.61vw, 31px);
-    margin-bottom: clamp(50px, 7.81vw, 150px);
+    margin-top: clamp(55px, 6.36vw, 110px);
+    margin-bottom: clamp(50px, 8.68vw, 150px);
 }
 
-/* Foto de estudiantes: */
+/*   BANNER - FOTO ESTUDIANTES:   */
 
 .program-banner-photo {
+    width: 100%;
     display: flex;
     justify-content: center;
-
-    height: clamp(152px, 31.67vw, 608px);
+    height: clamp(152px, 35.18vw, 608px);
 }
 
 #foto-banner {
-    width: clamp(358px, 74.739vw, 1435px);
+    position: absolute;
+
+    width: clamp(358px, 74.73vw, 1435px);
     height: clamp(152px, 31.67vw, 608px);
     
     border-radius: clamp(40px, 4.167vw, 80px);
 
-    position: absolute;
     z-index: 1;
 }
 
-/* Botones: */
+/*        BANNER - BOTONES:       */
 
 .button-banner {
+    position: absolute;
+
     width: clamp(96px, 15.10vw, 290px);
-    height: clamp(22px, 3.38vw, 65px);
+    height: clamp(21px, 3.38vw, 65px);
 
     border: none;
-    border-radius: 62px;
     background: #ffffff;
+    border-radius: clamp(20px, 3.58vw, 62px);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 
     color: #007095;
-    font-family: Poppins;
     font-weight: 500;
+    font-family: Poppins;
     font-size: clamp(8px, 1.25vw, 24px);
 
-    position: absolute;
     cursor: pointer;
     bottom: -5%;
     z-index: 3;
@@ -63,7 +63,7 @@
     right: 15%;
 }
 
-/* Adornos: */
+/*            ADORNOS:            */
 
 .esquinero {
     position: absolute;
@@ -85,7 +85,7 @@
     transform: scaleX(-1);
 }
 
-/* Parrafo introductorio: */
+/*     PARRAFO INTRODUCTORIO      */
 
 .program-intro {
     display: flex;
@@ -110,7 +110,7 @@
 
 .program-intro p {
     margin: 0px;
-    width: clamp(348px, 54.375vw, 1044px);
+    width: clamp(300px, 54.375vw, 1044px);
 
     color: #000;
     font-weight: 500;
@@ -130,6 +130,9 @@
     font-size: clamp(10px, 0.9375vw, 18px);
 }
 
+
+/*      INFORMACIÓN RESUMEN:      */
+
 .program-resumen {
     width: clamp(199px, 20.72vw, 398px);
     height: clamp(175px, 18.22vw, 350px);
@@ -142,17 +145,49 @@
     border-radius: clamp(40px, 4.16vw, 80px) 0 0 clamp(40px, 4.16vw, 80px);
 }
 
-/* Secciones de imagenes: */
+@media (max-width: 600px) {
+    #program-intro {
+        display: none;
+    }
+}
+
+/*      SECCIÓN DE IMAGENES       */
 
 .program-photos {
     width: 100%;
     display: flex;
-    background: #036EFC;
+    background: #007095;
     height: clamp(101px, 10.46vw, 201px);
 
     position: relative;
     justify-content: center;
-    margin-top: clamp(32.3px, 5.05vw, 97px);
+    margin-top: clamp(41px, 6.51vw, 125px);
+    margin-bottom: clamp(46px, 8.10vw, 140px);
+
+    padding-left: clamp(43px, 6.77vw, 130px);
+    padding-right: clamp(43px, 6.77vw, 130px);
+}
+
+@media (max-width: 750px) {
+    .program-photos {
+        gap: 25px;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .program-photos img {
+        width: 80%;
+        height: auto;
+        transform: none;
+        max-width: 420px;
+    }
+
+    .graduate img {
+        margin: 0;
+    }
 }
 
 .student img {
@@ -181,66 +216,30 @@
     top: -20%;
 }
 
-/* Plan de estudios:
-
-.program-information {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: clamp(22px, 0.343vw, 66px);
-}
-
-.program-information p {
-    margin: 0px;
-
-    color: #000;
-    font-weight: 500;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: clamp(10px, 1.041vw, 20px);
-
-    margin-left: clamp(4px, 0.98vw, 19px);
-}
-
-.program-information li {
-    margin: 0px;
-
-    color: #000;
-    font-weight: 500;
-    text-align: justify;
-    font-family: Poppins;
-    font-size: clamp(10px, 1.041vw, 20px);
-
-    margin-left: clamp(3px, 0.3125vw, 6px);
-}
-
-.plan-title {
-    margin-left: auto;
-    margin-right: auto;
-
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: clamp(16px, 0.25vw, 48px);
-    font-weight: 700;
-}
-
-.plan-title img {
-    width: clamp(12.6px, 1.97vw, 38px);
-    height: clamp(14px, 2.24vw, 43px);
-}
-
-.plan-slider img {
-    width: clamp(458px, 71.66vw, 1376px);
-    height: clamp(151px, 23.59vw, 453px);
-
-    border-radius: clamp(7.9px, 1.23vw, 23.7px);
+/*     INFORMACIÓN COMPLETA:      */
+.gap {
+    margin-top: clamp(32px, 5.55vw, 96px);
 }
 
 .info-text {
     display: flex;
-
+    position: relative;
+    
     margin-left: auto;
     margin-right: auto;
+    
+    justify-content: center;
+    width: clamp(300px, 73.03vw, 1262px);
+}
 
-    width: clamp(420px, 65.72vw, 1262px);
-} */
+.info-text p, li {
+    margin: 0px;
+
+    color: #000;
+    font-weight: 500;
+    text-align: justify;
+    font-family: Poppins;
+    font-size: clamp(12px, 1.44vw, 25px);
+
+    margin-left: clamp(3px, 0.3125vw, 6px);
+}
