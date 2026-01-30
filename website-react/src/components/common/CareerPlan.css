@@ -59,7 +59,7 @@
 }
 
 .plan-slider img {
-    width: clamp(380px, 70vw, 1200px);
+    width: clamp(300px, 52vw, 900px);
     height: auto;
     display: block;
 }

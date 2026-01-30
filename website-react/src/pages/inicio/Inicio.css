@@ -110,7 +110,7 @@
     color: white;
     font-weight: 800;
     align-items: center;
-    font-size: clamp(20px, 2.31vw, 40px);
+    font-size: clamp(10px, 2.31vw, 40px);
 }
 
 .study-adorno {
@@ -126,10 +126,10 @@
     justify-content: center;
     background-color: #1a1a1a;
 
-    width: clamp(186px, 21.58vw, 373px);
-    height: clamp(36px, 4.16vw, 72px);
+    width: clamp(100px, 21.58vw, 373px);
+    height: clamp(24px, 4.16vw, 72px);
 
-    font-size: clamp(21px, 2.48vw, 43px);
+    font-size: clamp(11px, 2.48vw, 43px);
     border-radius: clamp(91px, 10.53vw, 182px);
     padding: clamp(2.5px, 0.28vw, 5px) clamp(10px, 1.15vw, 20px);
 }
@@ -141,11 +141,20 @@
     position: relative;
     justify-content: center;
 
-    gap: clamp(55px, 6.36vw, 110px);
+    gap: clamp(36px, 6.36vw, 110px);
 
             /* top, right, bottom, left */
     padding: 0 clamp(185px, 21.41vw, 370px) clamp(125px, 14.46vw, 250px)
             clamp(185px, 21.41vw, 370px);
+}
+
+@media (max-width: 710px) {
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(10px, 5vw, 40px) clamp(15px, 4vw, 30px) clamp(10px, 5vw, 40px);
+    }
 }
 
 .quick-item {
@@ -164,7 +173,7 @@
     color: #000000;
     font-weight: 500;
     text-decoration: none;
-    font-size: clamp(18px, 1.8vw, 32px);
+    font-size: clamp(15px, 1.8vw, 32px);
     font-family: "FilsonProMedium", Helvetica;
     z-index: 1;
 }

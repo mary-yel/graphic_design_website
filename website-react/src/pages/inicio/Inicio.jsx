@@ -7,8 +7,8 @@ import CareerPlan from "../../components/common/CareerPlan";
 import InstagramFeed from "../../components/common/InstagramFeed";
 
 // Recursos:
-import Collage1 from "../../assets/svgs/inicio/AgrupacionImagen_Collage1.svg";
-import Collage2 from "../../assets/svgs/inicio/AgrupacionImagen_Collage2.svg";
+import Collage1 from "../../assets/svgs/inicio/AgrupacionImagen_Collage1.png";
+import Collage2 from "../../assets/svgs/inicio/AgrupacionImagen_Collage2.png";
 
 import Adorno1 from "../../assets/svgs/inicio/AdornoTipo1.svg"; // Color Negro
 import Adorno2 from "../../assets/svgs/inicio/AdornoTipo2.svg"; // Color Azul!
