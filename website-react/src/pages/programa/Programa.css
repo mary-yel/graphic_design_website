@@ -196,6 +196,14 @@
 
     position: relative;
     top: -20%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.student img:hover {
+    transform: translateY(-8px);
 }
 
 .graduate img {
@@ -206,6 +214,14 @@
 
     position: relative;
     top: -20%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.graduate img:hover {
+    transform: translateY(-8px);
 }
 
 .degree img {
@@ -214,6 +230,14 @@
 
     position: relative;
     top: -20%;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.degree img:hover {
+    transform: translateY(-8px);
 }
 
 /*     INFORMACIÓN COMPLETA:      */

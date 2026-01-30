@@ -34,12 +34,14 @@ export default function Semilleros() {
                     descp="Reflexionar sobre el patrimonio y la transmisión de valores culturales por medio de las tradiciones, mitos y leyendas del departamento del Cesar a partir de las herramientas del diseño gráfico."
                     date="Creación: 30/08/2022"
                     imagen={ImagoLogo}
+                    link="https://www.instagram.com/sem.imago/"
                 />
                 <ShortSeed
                     title="CÁMARA OSCURA"
                     descp="Registrar y difundir información sobre el patrimonio cultural, expresiones culturales, mitos y leyendas del Departamento del César a través de la producción audiovisual y fotográfica con el fin de preservar y promover la identidad cultural de la región."
                     date="Creación: 21/03/2023"
                     imagen={COscuraLogo}
+                    link="https://www.instagram.com/sem.camaraoscura/"
                 />
             </section>
 
@@ -64,7 +66,7 @@ export default function Semilleros() {
                     etiquetas={["Exploración", "Difusión"]}
                     galeria={[COscuraImagen1, COscuraImagen2]}
                     feed={COscuraImagen3}
-                    url={""}
+                    url={"https://www.instagram.com/sem.camaraoscura/"}
                 />
             </section>
 
